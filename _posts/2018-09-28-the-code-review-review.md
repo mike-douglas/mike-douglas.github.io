@@ -22,8 +22,7 @@ Pull requests, code reviews, and code commenting systems are communication platf
 
 I work at [InVision](http://invisionapp.com), a fully distributed company. Asynchronous communication is the primary way people here on the [Maker Schedule](http://paulgraham.com/makersschedule.html) get their information. Slack, email, written documentation, Github... the list goes on (and changes often). We are constantly reading and writing on these platforms. And so we’re building a culture through them. That’s why it’s so important that as a manager you are tuned into how your team is using them.
 
-# The way your team communicates asynchronously says a lot about your culture.
-Code reviews are a place where engineers talk about their craft. It’s where people vent, sometimes directly and sometimes inadvertently. Relationships develop there, squabbles may start there. _People connect_ in those comment fields and communication patterns emerge. Culture is nudged and influenced from these often ignored places of team-building goodness.
+**The way your team communicates asynchronously says a lot about your culture.** Code reviews are a place where engineers talk about their craft. It’s where people vent, sometimes directly and sometimes inadvertently. Relationships develop there, squabbles may start there. _People connect_ in those comment fields and communication patterns emerge. Culture is nudged and influenced from these often ignored places of team-building goodness.
 
 ## How to Meta-Review Code
 I usually spend 20-30 minutes a week going through Pull Requests that have come through to and within my team. I’m primarily looking for _trends in communication_, not reviewing the code itself. Sometimes out of curiosity and for more context I do look deeper into the code, and if that’s helpful for you do it! When I look through a code review, I ask these general questions:
