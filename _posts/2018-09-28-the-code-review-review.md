@@ -1,30 +1,26 @@
-# The Code Review Review
+---
+title: The Code Review Review
+layout: post
+author: miked
+excerpt_separator: <!--more-->
+tags: [engineering, management, code reviews]
+---
 
-As a manager of engineers often your work is directly technical. Talking about architecture, sometimes writing code, setting up tools and processes to help your team—all things that EMs do depending on their company and what their team needs from them.
+Let's talk about code reviews as a manager.
 
-I’d like to add another thing to the list, something that is equally important for you as a technical leader and as a people leader. Something that gives you a kind of insight that is often overlooked in the day-to-day of your team, meetings, and other obligations.
+<!--more-->
 
-I want to talk about code reviews as a manager.
-
-That statement can be responded to in a few ways, two of which I hear often:
-
-> “But I don’t write code [here], it’s not my place to review my team’s code! They know this stuff better than I do.”
-
-..or..
-
-> I do write code, and I participate in code reviews with my team. We peer review one another’s work regularly. I already do this!
-
-Those responses are all well and good, in fact I used to be squarely in the first camp. In most of my EM gigs I didn’t have time, head space, or expertise in the systems to effectively review my team’s code. But I’m not talking about reviewing _code_.
-
-I want to talk about **The Code Review Review**, a.k.a The Meta Code Review. I think every Engineering Manager can benefit from reviewing their team’s code reviews. This post is how and why I do it, and why I think you should do it for your team.
+More specifically, I want to talk about the **Code Review Review**, a.k.a The Meta Code Review. I think every Engineering Manager can benefit from reviewing their team’s code reviews. This post is how and why I do it, and why I think you should do it for your team.
 
 ## Why You Should Review Code Reviews
 
-Pull requests, code reviews, and code commenting systems are communication platforms for your team. They are where team dynamics unfold, reveal themselves, and develop. To ignore them is a mistake, an oversight, and a real missed opportunity as a manager.
+Code reviews and code commenting systems are communication platforms for your team. They are where team dynamics unfold, reveal themselves, and develop. To ignore them is a mistake; a missed opportunity to gain some crucial insights about the people you manage.
 
 I work at [InVision](http://invisionapp.com), a fully distributed company. Asynchronous communication is the primary way people here on the [Maker Schedule](http://paulgraham.com/makersschedule.html) get their information. Slack, email, written documentation, Github... the list goes on (and changes often). We are constantly reading and writing on these platforms. And so we’re building a culture through them. That’s why it’s so important that as a manager you are tuned into how your team is using them.
 
-**The way your team communicates asynchronously says a lot about your culture.** Code reviews are a place where engineers talk about their craft. It’s where people vent, sometimes directly and sometimes inadvertently. Relationships develop there, squabbles may start there. _People connect_ in those comment fields and communication patterns emerge. Culture is nudged and influenced from these often ignored places of team-building goodness.
+**The way your team communicates asynchronously says a lot about its culture.**
+
+Code reviews are a place where engineers talk about their craft. It’s where people vent, sometimes directly and sometimes inadvertently. Relationships develop there, squabbles may start there. _People connect_ in those comment fields and communication patterns emerge. Culture is nudged and influenced from these often ignored places of team-building goodness.
 
 ## How to Meta-Review Code
 
