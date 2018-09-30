@@ -1,8 +1,4 @@
 ---
-title: directive.io blog
-layout: post_list
+layout: home
 ---
 
-# I write things sometimes
-
-Below are some posts that I've written over time and collected here.
