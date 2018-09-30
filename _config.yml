@@ -1,1 +1,10 @@
+baseurl: ''
+url: http://blog.directive.io
+
 remote_theme: rohanchandra/type-theme
+
+theme:
+  title: DIRECTIVE.IO BLOG
+  gravatar: ba3dbdba40536cb44e537abfcc08cf64
+  header_text: Hello.
+  footer_text: Copyright 2018 Mike Douglas
