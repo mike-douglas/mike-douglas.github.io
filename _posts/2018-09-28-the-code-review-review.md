@@ -12,7 +12,7 @@ Let's talk about code reviews as a manager.
 
 More specifically, I want to talk about the **Code Review Review**, a.k.a The Meta Code Review. I think every Engineering Manager can benefit from reviewing their team’s code reviews. This post is how and why I do it, and why I think you should do it for your team.
 
-## Why You Should Review Code Reviews
+## Why you should review Code Reviews
 
 Code reviews and code commenting systems are communication platforms for your team. They are where team dynamics unfold, reveal themselves, and develop. To ignore them is a mistake; a missed opportunity to gain some crucial insights about the people you manage.
 
@@ -35,6 +35,6 @@ Note the tone and communication style. This is where I like to look at what I ca
 **How is the review feedback being received?**
 Who is the recipient and how are they taking this feedback? Is there a lot of back-and-forth? Are people following up within the tool, or outside of it? What are the turnaround times for their follow-up?
 
-## Final Notes
+## Final notes
 
 The Code Review Review is meant to be a tool for visibility, not an auditing mechanism, for how you team works together. You know your people through regular 1:1s, how does their personality play out in these asynchronous platforms? A Code Review Review is a way to gain insight into the individuals you manage and into how your team forms its culture. So give it a try, and let me know what you think!
