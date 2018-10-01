@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #222;
+}
+
+a {
+  color: hotpink;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+  font-size: 1.7em;
+  padding: 0;
+  margin: 0 0 1em 0;
+  display: inline;
+}
+
+h1 {
+  font-weight: 400;
+  color: hotpink;
+}
+
+h1.title a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+nav,
+header,
+article,
+footer {
+  margin: 2em;
+  max-width: 40em;
+}
+
+nav ul {
+  font-size: 0.9em;
+  background-color: #fafafa;
+}
+
+ul {
+  list-style: none;
+  padding: 1em;
+  margin: -1em;
+}
+
+li {
+  padding: 0;
+  margin: 0 1em 0 0;
+  display: inline;
+}
+
+nav a {
+  color: #222;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: right;
+}
+
+footer span {
+  font-size: 0.8em;
+}
+
+hr {
+  background-color: #fafafa;
+  border: 0;
+  height: 1em;
+  margin: 1.5em -1em 1.5em -1em;
+}
+
+article time {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  color: #888;
+  display: block;
+}
+
+#images {
+  position: relative;
+}
+
+#images img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin: 1.5em 0 1.5em 0;
+}
+
+img.author {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#carousel {
+  z-index: -1;
+  position: absolute;
+  left: 75px;
+  top: 0;
+}

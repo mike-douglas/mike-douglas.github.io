@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  {{content}}
+  <nav>
+    <ul>
+      <li><a href="https://twitter.com/miked" class="link twitter">@miked</a></li>
+      <li><a href="https://github.com/mike-douglas" class="link github">Github</a></li>
+      <li><a href="http://getpocket.com/@itsmiked" class="link pocket">Pocket</a></li>
+      <li><a href="https://instagram.com/thisismiked" class="link instagram">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/michael-douglas-a6a1b180/" class="link linkedin">Linkedin</a></li>
+      <li><a href="https://standardresume.co/mike-douglas" class="link resume">Resume</a></li>
+    </ul>
+  </nav>
+  <footer>
+    <span>&copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}</span>
+  </footer>
+</body>
+
+</html>

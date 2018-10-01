@@ -1,7 +1,1 @@
-title: Directive.io Blog
-
-remote_theme: chesterhow/tale
-
-plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
+title: directive.io Blog
