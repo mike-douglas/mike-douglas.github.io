@@ -26,7 +26,7 @@ For many applications and architectures this is the perfect way to handle model 
 
 The most important conceptual difference between CRUD and CQRS is what each addresses when you ask this question of how your application deals with its data entities:
 
-> /I want to verb my data entity (noun)./
+> I want to _verb_ my _data entity_ (noun).
 
 In a very general sense, CRUD focuses on the noun part of that statement, and CQRS focuses on the verb (the command). More specifically:
 
