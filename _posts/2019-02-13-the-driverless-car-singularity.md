@@ -6,6 +6,12 @@ excerpt_separator: <!--more-->
 tags: [tech, cars, opinion]
 ---
 
+<div class="excerpt">
+Thoughts about an opinion piece in The Guardian on the unpredictability of people with self-driving cars.
+</div>
+
+<!--more-->
+
 The opinion piece, [The self-driving car is a marvel doomed by unpredictable humans](https://www.theguardian.com/commentisfree/2019/feb/13/the-self-driving-car-is-a-marvel-doomed-by-unpredictable-humans), got me thinking. I’m less pessimistic about the autonomous future than the author, but it brought up something I’ve thought about for a while with driverless cars and its viability/safety on the streets. This passage highlights the main problem pretty well:
 
 > And of course, people are often the biggest issue. Even the most complex algorithm can’t hope to match the chaotic, unpredictable, baffling behaviour of the average human. Or “pedestrian”, as they’d be considered by autonomous vehicles.  

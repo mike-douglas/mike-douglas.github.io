@@ -6,9 +6,13 @@ excerpt_separator: <!--more-->
 tags: [management, people]
 ---
 
-Psychology tells us about a phenomenon called the [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect). In essence, it states that people behave differently when they feel that they are being observed. It seems pretty obvious that we tend to react differently when we feel that we’re being observed, whether we actually are or not. Within teams this idea goes even deeper. The dynamics of a team creates such a complex interconnected system that it’s helpful to compare this effect to the [Observer effect](https://en.wikipedia.org/wiki/Observer_effect_%28physics%29) in physics.
+<div class="excerpt">
+How to be mindful about how you interact with your team, and how it closely resembles some effects seen in physical and quantum systems.
+</div>
 
 <!--more-->
+
+Psychology tells us about a phenomenon called the [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect). In essence, it states that people behave differently when they feel that they are being observed. It seems pretty obvious that we tend to react differently when we feel that we’re being observed, whether we actually are or not. Within teams this idea goes even deeper. The dynamics of a team creates such a complex interconnected system that it’s helpful to compare this effect to the [Observer effect](https://en.wikipedia.org/wiki/Observer_effect_%28physics%29) in physics.
 
 The observer effect states that the act of observation changes the outcome of an experiment. Checking the pressure in a tire inevitably requires letting some air out in order to measure, altering the system. The very act of observation changes the thing you’re observing.
 

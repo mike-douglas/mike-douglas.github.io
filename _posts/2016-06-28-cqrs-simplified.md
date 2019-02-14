@@ -6,9 +6,13 @@ excerpt_separator: <!--more-->
 tags: [engineering, architecture]
 ---
 
-CQRS, or Command Query Responsibility Separation, is an architectural pattern that usually consists of separate implementations of data models for changing/updating data and displaying data. It’s a different way of solving the problem that CRUD architectures solve: how does a system address changes and additions to its data collection? How does that system also handle displaying and representing items from that collection?
+<div class="excerpt">
+A brief introduction to the CQRS pattern and how it compares to a more familiar pattern, REST.
+</div>
 
 <!--more-->
+
+CQRS, or Command Query Responsibility Separation, is an architectural pattern that usually consists of separate implementations of data models for changing/updating data and displaying data. It’s a different way of solving the problem that CRUD architectures solve: how does a system address changes and additions to its data collection? How does that system also handle displaying and representing items from that collection?
 
 When I first learned about CQRS, it was hard to step back and think of how it would even work because, in general, I’m very RESTful in my architectural thinking these days. I’m hardwired to see CRUD as a natural solution to handling data models. This doesn’t need to be the case! CQRS offers some flexibility that CRUD just doesn’t have.
 

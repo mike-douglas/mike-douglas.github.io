@@ -6,9 +6,13 @@ excerpt_separator: <!--more-->
 tags: [engineering, management, code reviews]
 ---
 
-Let's talk about code reviews as a manager.
+<div class="excerpt">
+The Meta Code Review and why you should be doing them as an engineering leader.
+</div>
 
 <!--more-->
+
+Let's talk about code reviews as a manager.
 
 More specifically, I want to talk about the **Code Review Review**, a.k.a The Meta Code Review. I think every Engineering Manager can benefit from reviewing their team’s code reviews. This post is how and why I do it, and why I think you should do it for your team.
 
