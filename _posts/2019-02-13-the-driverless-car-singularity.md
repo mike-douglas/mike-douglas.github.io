@@ -13,7 +13,7 @@ The opinion piece, [The self-driving car is a marvel doomed by unpredictable hum
 I’d extend this even further to say that _other drivers_ are also similarly chaotic and unpredictable. But I wonder if that will always be the case? Certainly as more autonomous vehicles appear on the road it’ll only become more safe, right? After all, if we remove the baffling behavior of people behind the wheel the algorithms of future vehicles can play out uninterrupted.
 
 
-<div class="smol">
+<div class="centerpiece">
 <img src="/assets/2019-02-13-driverless.png" alt="The Driverless Car Singularity">
 </div>
 

@@ -92,12 +92,18 @@ article time {
   display: block;
 }
 
-article .smol {
-  align: center;
+article blockquote {
+  border-left: 0.25em solid #eee;
+  padding-left: 0.25em;
+  background-color: #fafafa;
 }
 
-article .smol img {
-  width: 20em;
+article .centerpiece {
+  text-align: center;
+}
+
+article .centerpiece img {
+  width: 80%;
 }
 
 .archive h3 {
