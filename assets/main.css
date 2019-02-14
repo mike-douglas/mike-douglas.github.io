@@ -92,6 +92,14 @@ article time {
   display: block;
 }
 
+article .smol {
+  align: center;
+}
+
+article .smol img {
+  width: 20em;
+}
+
 .archive h3 {
   font-size: 1.25em;
 }
