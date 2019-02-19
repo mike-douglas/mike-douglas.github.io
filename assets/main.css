@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 body {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 110%;
-  text-rendering: optimizeLegibility;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 110%;
+    text-rendering: optimizeLegibility;
 }
 
 p {
@@ -16,8 +16,8 @@ p {
 }
 
 a {
-  color: hotpink;
-  text-decoration: none;
+    color: hotpink;
+    text-decoration: none;
 }
 
 a:hover {
@@ -27,28 +27,24 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-weight: bold;
-  padding: 0;
-  margin: 1.0em 0 1.0em 0;
-  text-rendering: geometricPrecision;
-  letter-spacing: -0.05em;
-  color: #222;
+    font-weight: bold;
+    padding: 0;
+    margin: 1.0em 0 1.0em 0;
+    text-rendering: geometricPrecision;
+    letter-spacing: -0.05em;
+    color: #222;
 }
 
 h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 h2 {
     font-size: 1.75em;
 }
 
-h3 {
-    font-size: 1.5em;
-}
-
 article .title a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 nav,
@@ -56,57 +52,56 @@ header,
 article,
 footer,
 section {
-  margin: 2em auto 0 auto;
-  max-width: 40em;
+    margin: 2.0em auto 3.0em auto;
+    max-width: 40em;
 }
 
 nav ul {
-  font-size: 0.9em;
-  background-color: #fafafa;
-  text-align: center;
+    font-size: 0.9em;
+    background-color: #fafafa;
+    text-align: center;
 }
 
 nav ul {
-  list-style: none;
-  padding: 1em;
-  margin: -1em;
+    list-style: none;
+    padding: 1em;
+    margin: -1em;
 }
 
 nav ul li {
-  padding: 0;
-  margin: 0 1em 0 0;
-  display: inline;
+    padding: 0;
+    margin: 0 1em 0 0;
+    display: inline;
 }
 
 nav a {
-  color: #222;
-  text-decoration: underline;
-  border-bottom: 0;
+    color: #222;
+    text-decoration: underline;
+    border-bottom: 0;
 }
 
 footer {
-  text-align: center;
+    text-align: center;
 }
 
 footer span {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
 hr {
-  background-color: #fafafa;
-  border: 0;
-  height: 1em;
-  margin: 1.5em -1em 1.5em -1em;
+    background-color: #fafafa;
+    border: 0;
+    height: 1em;
+    margin: 1.5em -1em 1.5em -1em;
 }
 
 time {
-  color: #888;
+    color: #888;
 }
 
 article time {
-  text-transform: uppercase;
-  font-size: 0.85em;
-  display: block;
+    text-transform: uppercase;
+    display: block;
 }
 
 article p {
@@ -114,71 +109,86 @@ article p {
 }
 
 article .excerpt {
-  display: none;
+    display: none;
 }
 
 article blockquote {
-  border-left: 0.25em solid #eee;
-  padding-left: 0.25em;
-  background-color: #fafafa;
+    border-left: 0.25em solid #eee;
+    padding-left: 0.25em;
+    background-color: #fafafa;
 }
 
 article .centerpiece {
-  text-align: center;
+    text-align: center;
 }
 
 article .centerpiece img {
-  width: 80%;
+    width: 80%;
 }
 
 .archive h3 {
-  font-size: 1.25em;
-  margin: 1.5em 0 0 0;
+    font-size: 1.25em;
+    margin: 0.25em 1.5em 0 0;
+}
+
+.archive h3 a {
+    color: #333;
+}
+
+.archive h3 a:hover {
+    color: hotpink;
+    text-decoration: none;
 }
 
 .archive ul {
-  list-style: none;
-  margin: 1em 0;
-  padding: 0;
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .archive li {
-  list-style-type: none;
-  margin: 1.5em 0 1.5em 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 1.5em 0 1.5em 0;
+    padding: 0;
 }
 
 .archive time {
-  display: block;
-  text-transform: uppercase;
-  font-size: 0.75em;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.85em;
 }
 
 .archive .excerpt {
-  padding-right: 1.5em;
+    padding-right: 1.5em;
 }
 
 #images {
-  position: relative;
+    position: relative;
 }
 
 #images img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  margin: 1.5em 0 1.5em 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin: 1.5em 0 1.5em 0;
 }
 
 img.author {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 #carousel {
-  z-index: -1;
-  position: absolute;
-  left: 75px;
-  top: 0;
+    z-index: -1;
+    position: absolute;
+    left: 75px;
+    top: 0;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 100%;
+    }
 }
