@@ -6,9 +6,9 @@ excerpt_separator: <!--more-->
 tags: [management, people]
 ---
 
-<div class="excerpt">
+<p class="excerpt">
 How to be mindful about how you interact with your team, and how it closely resembles some effects seen in physical and quantum systems.
-</div>
+</p>
 
 <!--more-->
 

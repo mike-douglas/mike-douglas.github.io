@@ -7,8 +7,7 @@ layout: default
     <img class="profile" src="/assets/me.jpg">
     <img id="carousel" data-images="/assets/12393811_154536868247139_2140413012_n.jpg /assets/13355664_1537053769935236_1405084596_n.jpg /assets/19623547_484417345236779_3802491420829286400_n.jpg /assets/27575080_1970076916645560_7296018592489799680_n.jpg /assets/33210111_1125520684255584_4163938095885975552_n.jpg /assets/41356875_331522237660970_9181643926913744337_n.jpg /assets/42806338_2172004903127017_3997413782872488321_n.jpg /assets/43158352_2065690960407833_8142392049961103197_n.jpg /assets/46787814_272075246840229_5974223932337245755_n.jpg">
   </div>
-  <h1>👋 Hi, I'm Mike.</h1>
-  <h2>I lead teams that build awesome things.</h2>
+  <h1><span class="pink">👋 Hi, I'm Mike.</span> I lead teams that build awesome things.</h1>
   <div>
     <p>I'm an Engineering Manager, previously at <a href="https://invisionapp.com">InVision</a>, <a href="https://npr.org">NPR</a>, and <a href="https://insuremytrip.com">InsureMyTrip</a>.</p>
     <p>Outside of work I do lots of things. I'm a music nerd 🎧 and a dog dad 🐶. I'm working to perfect my espresso
@@ -17,11 +16,11 @@ layout: default
   </div>
 </header>
 <section class="archive">
-  <h3>Stuff I've written.</h3>
+  <h2>Posts</h2>
   <ul>
     {% for post in site.posts %}
     <li>
-      <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <time datetime="{{ post.date }}">{{ post.date | date: "%b %d" }}</time>
       {{ post.excerpt }}
     </li>

@@ -6,9 +6,9 @@ excerpt_separator: <!--more-->
 tags: [engineering, architecture]
 ---
 
-<div class="excerpt">
+<p class="excerpt">
 A brief introduction to the CQRS pattern and how it compares to a more familiar pattern, REST.
-</div>
+</p>
 
 <!--more-->
 

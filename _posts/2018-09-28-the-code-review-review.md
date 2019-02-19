@@ -6,9 +6,9 @@ excerpt_separator: <!--more-->
 tags: [engineering, management, code reviews]
 ---
 
-<div class="excerpt">
+<p class="excerpt">
 The Meta Code Review and why you should be doing them as an engineering leader.
-</div>
+</p>
 
 <!--more-->
 

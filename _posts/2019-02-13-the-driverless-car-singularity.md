@@ -6,9 +6,9 @@ excerpt_separator: <!--more-->
 tags: [tech, cars, opinion]
 ---
 
-<div class="excerpt">
+<p class="excerpt">
 Thoughts about an opinion piece in The Guardian on the unpredictability of people with self-driving cars.
-</div>
+</p>
 
 <!--more-->
 
