@@ -18,7 +18,7 @@ layout: default
 <section class="archive">
   <h1>Posts</h1>
   <ul>
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 5 %}
     <li>
       <time datetime="{{ post.date }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -26,6 +26,9 @@ layout: default
     </li>
     {% endfor %}
   </ul>
+  <p>
+    <a href="/archive">Full Archive &gt;&gt;</a>
+  </p>
 </section>
 <script>
   var v = function () {
