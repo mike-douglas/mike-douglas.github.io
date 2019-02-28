@@ -6,7 +6,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-nav, header, article, footer, section {
+body > * {
   margin: 2.0em auto 3.0em auto;
   max-width: 40em;
 }
@@ -131,6 +131,10 @@ nav ul {
   padding-left: 0;
 }
 
+nav li {
+  display: inline;
+}
+
 nav.links ul {
   font-size: 0.90em;
   background-color: #fafafa;
@@ -140,7 +144,6 @@ nav.links ul {
 
 nav.links ul li {
   margin: 0 1.0em 0 0;
-  display: inline;
 }
 
 nav.links a {
@@ -156,7 +159,6 @@ nav.top ul {
 }
 
 nav.top ul li {
-  display: inline;
   margin-left: 1.0em;
 }
 
