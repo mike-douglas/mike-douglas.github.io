@@ -1,38 +1,59 @@
 import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 
-import Axios from 'axios-jsonp-pro'
+import jsonp from 'jsonp'
 
-//const listadoPocket = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/28a9a27536c2a9273755adcf3a6377de3d3d5dd6/js/'
+const listadoPocket = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/28a9a27536c2a9273755adcf3a6377de3d3d5dd6/js/'
+const listadoSpotify = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/500c8be20fcd159c8f74ef40246f1dd9aecf05e0/js/'
 
-const Item = ({ item }) => (
-  <div>
-    <h3>{item.title}</h3>
-    <span>{item.url.split('/', 3)[2]}</span>
-  </div>
-)
-
-const ReadingList = () => {
-  const [items, setItems] = useState([{"content":{"imageURL":"https://www.timsommer.be/content/images/2017/12/hofstader-1.jpg","title":"Famous laws of Software development","url":"https://www.timsommer.be/famous-laws-of-software-development/"},"created_date":"2019-03-04 03:46:08"},{"content":{"imageURL":"https://www.historytoday.com/sites/default/files/reviews/venus_willendorf.jpg","title":"Weight of the World","url":"https://www.historytoday.com/reviews/weight-world"},"created_date":"2019-03-04 10:01:59"},{"content":{"imageURL":"https://static01.nyt.com/images/2018/11/19/fashion/19terry-SUB/merlin_146588991_23b9128b-4a4b-42b8-a2fa-d0ca40c4bff9-articleLarge.jpg?quality=75&auto=webp&disable=upscale","title":"How to Talk to People, According to Terry Gross","url":"https://www.nytimes.com/2018/11/17/style/self-care/terry-gross-conversation-advice.html"},"created_date":"2019-03-04 09:46:18"},{"content":{"imageURL":"https://cdn-images-1.medium.com/max/1600/1*vjHyq9JMlreqXQwPyHEEqw.jpeg","title":"Remote Work Doesn\u2019t Scale\u00a0\u2026 or Does\u00a0It?","url":"https://hackernoon.com/remote-work-doesnt-scale-or-does-it-4a72ce2bb1f3"},"created_date":"2019-03-04 09:46:16"},{"content":{"imageURL":"https://cameronlonsdale.com/assets/img/docker-image/layers.png","title":"Automating security and making it more accessible","url":"https://cameronlonsdale.com/2018/11/26/whats-in-a-docker-image/"},"created_date":"2019-03-04 09:46:17"},{"content":{"imageURL":"https://cdn-images-1.medium.com/max/1600/1*3cAh7XhGmxZWQD9OaGxEyQ.jpeg","title":"Building Distributed Engineering Teams","url":"https://blog.brunomiranda.com/building-a-distributed-engineering-team-85d281b9b1c"},"created_date":"2019-03-04 09:46:17"},{"content":{"imageURL":"https://cdn-images-1.medium.com/max/1600/1*87h-TyL_geocNgIdsFvwOQ.jpeg","title":"How to be Strategic","url":"https://medium.com/the-year-of-the-looking-glass/how-to-be-strategic-f6630a44f86b"},"created_date":"2019-03-04 03:46:09"}])
+const jsonpFeed = (url) => {
+  const [items, setItems] = useState([])
 
   useEffect(() => {
-    // Axios.jsonp(listadoPocket)
-    //   .then(setItems)
+    jsonp(url, null, (error, data) => setItems(data))
   })
 
+  return [items, setItems]
+}
+
+const LinkIcon = () => (
+  <svg className="link-icon" xmlns="http://www.w3.org/2000/svg" width="0.85em" height="0.85em" viewBox="0 0 24 24"><path d="M12.068.016l-3.717 3.698 5.263 5.286h-13.614v6h13.614l-5.295 5.317 3.718 3.699 11.963-12.016z"/></svg>
+)
+
+const LinkFeedItem = ({ item }) => (
+  <li>
+    <a href={item.url} target="_blank">
+      {item.title}
+      <span>{item.url.split('/', 3)[2]} <LinkIcon/></span>
+    </a>
+  </li>
+)
+
+const LinkFeed = () => {
+  const [items, setItems] = jsonpFeed(listadoPocket)
+
   return (
-    <div>
+    <ul className="quick-links">
       {items.map((item, k) => (
-        <Item key={k} item={item.content}/>
+        <LinkFeedItem key={k} item={item.content}/>
       ))}
-    </div>
+    </ul>
+  )
+}
+
+const SpotifyFeed = () => {
+  const [playlist, setPlaylist] = jsonpFeed(listadoSpotify)
+
+  return (
+    <div>Nothing to see here, yet.</div>
   )
 }
 
 ReactDOM.render(
   <div>
-    <h1>Reading List</h1>
-    <ReadingList/>
+    <h2>Quick Links</h2>
+    <p><span className="bullet">📚</span>Stuff I'm reading, updated constantly</p>
+    <LinkFeed/>
   </div>,
   document.getElementById('app')
 )
