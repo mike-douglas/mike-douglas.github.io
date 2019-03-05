@@ -173,6 +173,73 @@ article .title a {
   display: inline;
 }
 
+/* Spotify playlist */
+
+.playlist {
+  list-style: none;
+  margin: 1.0em 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playlist li {
+  list-style-type: none;
+  margin: 0.50em 0 0.50em 0;
+  padding: 0;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.playlist a {
+  display: flex;
+}
+
+.playlist img {
+  width: 6.0em;
+  height: 6.0em;
+}
+
+.playlist div {
+  flex-grow: 1;
+  display: block;
+  margin-left: 0.50em;
+}
+
+.playlist div span {
+  display: block;
+  margin-top: 0.25em;
+}
+
+.playlist .track {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.playlist .album {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.playlist li a {
+  color: #333;
+}
+
+.playlist li a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.playlist li a .link-icon {
+  display: none;
+}
+
+.playlist li a:hover .link-icon {
+  display: inline;
+  fill: hotpink;
+}
+
 /* Site navigation */
 
 nav ul {
@@ -308,12 +375,12 @@ img.author {
     text-transform: uppercase;
   }
 
-  .quick-links ul {
+  .quick-links, .playlist {
     display: block;
     flex-wrap: unset;
   }
 
-  .quick-links li {
+  .quick-links li, .playlist li {
     flex-grow: unset;
     width: 100%;
   }

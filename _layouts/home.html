@@ -5,7 +5,7 @@ layout: default
 <header>
   <div id="images">
     <img class="profile" src="/assets/me.jpg">
-    <img id="carousel" data-images="/assets/12393811_154536868247139_2140413012_n.jpg /assets/13355664_1537053769935236_1405084596_n.jpg /assets/19623547_484417345236779_3802491420829286400_n.jpg /assets/27575080_1970076916645560_7296018592489799680_n.jpg /assets/33210111_1125520684255584_4163938095885975552_n.jpg /assets/41356875_331522237660970_9181643926913744337_n.jpg /assets/42806338_2172004903127017_3997413782872488321_n.jpg /assets/43158352_2065690960407833_8142392049961103197_n.jpg /assets/46787814_272075246840229_5974223932337245755_n.jpg">
+    <div id="carousel"></div>
   </div>
   <h1><span class="pink">👋 Hi, I'm Mike.</span> I lead teams that build awesome things.</h1>
   <div>
@@ -30,15 +30,5 @@ layout: default
     <a href="/archive">Full Archive &gt;&gt;</a>
   </p>
 </section>
-<section class="feeds" id="app">
-
-</section>
+<section class="feeds" id="feed-app"></section>
 <script src="/assets/bundle.js"></script>
-<script>
-  var v = function () {
-    var e = document.getElementById("carousel");
-    e.src = (function (n) { return n[parseInt(Math.random() * n.length)]; })(e.dataset.images.split(' '));
-  };
-  v();
-  window.setInterval(v, 2000);
-</script>
