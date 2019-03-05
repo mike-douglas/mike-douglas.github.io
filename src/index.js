@@ -34,7 +34,7 @@ const LinkFeed = () => {
 
   return (
     <ul className="quick-links">
-      {items.map((item, k) => (
+      {items.slice(0, 6).map((item, k) => (
         <LinkFeedItem key={k} item={item.content}/>
       ))}
     </ul>
