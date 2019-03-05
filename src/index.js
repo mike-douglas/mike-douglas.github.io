@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 
-import Axios from 'axios'
+import jsonp from 'jsonp'
 
-const listadoPocket = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/28a9a27536c2a9273755adcf3a6377de3d3d5dd6/json/'
-const listadoSpotify = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/500c8be20fcd159c8f74ef40246f1dd9aecf05e0/json/'
+const listadoPocket = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/28a9a27536c2a9273755adcf3a6377de3d3d5dd6/js/'
+const listadoSpotify = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/500c8be20fcd159c8f74ef40246f1dd9aecf05e0/js/'
 
 const jsonFeed = (url) => {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    Axios.get(url).then(response => {
-      setItems(response.data.sort((a, b) => (new Date(b.created_date) - new Date(a.created_date))))
+    jsonp(url, null, (error, data) => {
+      setItems(data.sort((a, b) => (new Date(b.created_date) - new Date(a.created_date))))
     })
   }, [])
 
