@@ -26,7 +26,7 @@ const LinkFeedItem = ({ item }) => (
   <li>
     <a href={item.url} target="_blank">
       {item.title}
-      <span>{item.url.split('/', 3)[2]} <LinkIcon/></span>
+      <span>{item.url.replace(/www\./, '').split('/', 3)[2]} <LinkIcon/></span>
     </a>
   </li>
 )

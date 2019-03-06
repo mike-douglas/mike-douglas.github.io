@@ -144,7 +144,8 @@ article .title a {
 
 .quick-links li a {
   color: #333;
-  display: block
+  display: block;
+  margin-right: 0.25em;
 }
 
 .quick-links li a:hover {
