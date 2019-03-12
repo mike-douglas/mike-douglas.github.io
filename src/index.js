@@ -11,7 +11,7 @@ const jsonFeed = (url) => {
 
   useEffect(() => {
     jsonp(url, null, (error, data) => {
-      setItems(data.sort((a, b) => (new Date(b.created_date) - new Date(a.created_date))))
+      setItems(data.sort((a, b) => (new Date(a.created_date) - new Date(b.created_date))))
     })
   }, [])
 
