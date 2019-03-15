@@ -138,6 +138,7 @@ article .title a {
   list-style-type: none;
   margin: 0.50em 0 0.50em 0;
   padding: 0;
+  line-height: 1.5em;
   flex-grow: 1;
   width: 50%;
 }
@@ -145,7 +146,7 @@ article .title a {
 .quick-links li a {
   color: #333;
   display: block;
-  margin-right: 0.25em;
+  margin-right: 0.5em;
 }
 
 .quick-links li a:hover {
