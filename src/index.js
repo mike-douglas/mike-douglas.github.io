@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom'
 import jsonp from 'jsonp'
 import { timeParse } from 'd3-time-format'
 
-const listadoPocket = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/28a9a27536c2a9273755adcf3a6377de3d3d5dd6/js/'
-const listadoSpotify = 'http://listado.us-west-1.elasticbeanstalk.com/v1/export/500c8be20fcd159c8f74ef40246f1dd9aecf05e0/js/'
+const listadoPocket = 'https://zi8bef7mgi.execute-api.us-west-2.amazonaws.com/dev/v1/export/28a9a27536c2a9273755adcf3a6377de3d3d5dd6/js/'
+const listadoSpotify = 'https://zi8bef7mgi.execute-api.us-west-2.amazonaws.com/dev/v1/export/500c8be20fcd159c8f74ef40246f1dd9aecf05e0/js/'
 
 const jsonFeed = (url) => {
   const [items, setItems] = useState([])
