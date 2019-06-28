@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+body {
+  font-size: 110%;
+  font-family: 'Fira Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  background-color: #0e1111;
+}
+
+body > * {
+  margin: 2.0em auto 3.0em auto;
+  max-width: 40em;
+}
+
+/* Links */
+
+a {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Basic text */
+
+p {
+  color: #efefef;
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  padding: 0;
+  margin: 1.0em 0 1.0em 0;
+  text-rendering: geometricPrecision;
+  letter-spacing: -0.05em;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+time {
+  color: #999;
+}
+
+hr {
+  background-color: #fafafa;
+  border: 0;
+  height: 1.0em;
+  margin: 1.5em -1.0em 1.5em -1.0em;
+}
+
+/* Articles */
+
+article time {
+  text-transform: uppercase;
+  display: block;
+}
+
+article p {
+  line-height: 1.75em;
+}
+
+article .excerpt {
+  display: none;
+}
+
+article blockquote {
+  border-left: 0.25em solid #000;
+  padding-left: 0.25em;
+  background-color: #222;
+}
+
+article .centerpiece {
+  text-align: center;
+}
+
+article .centerpiece img {
+  width: 80%;
+}
+
+article .title a {
+  text-decoration: none;
+}
+
+/* Archive listing */
+
+.archive ul {
+  list-style: none;
+  margin: 1.0em 0 0 0;
+  padding: 0;
+}
+
+.archive li {
+  list-style-type: none;
+  margin: 1.5em 0 1.5em 0;
+  padding: 0;
+}
+
+.archive h3 {
+  font-size: 1.25em;
+  margin: 0.25em 1.5em 0 0;
+}
+
+.archive h3 a {
+  color: #ccc;
+}
+
+.archive h3 a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+.archive time {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+/* Quick links */
+
+.quick-links {
+  list-style: none;
+  margin: 1.0em 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quick-links li {
+  list-style-type: none;
+  margin: 0.50em 0 0.50em 0;
+  padding: 0;
+  line-height: 1.5em;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.quick-links li a {
+  color: #ccc;
+  display: block;
+  margin-right: 0.5em;
+}
+
+.quick-links li a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.quick-links li a span {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  color: #aaa;
+  display: block;
+  margin-top: 0.25em;
+}
+
+.quick-links li a span:hover {
+  color: #888;
+}
+
+.quick-links li a span .link-icon {
+  fill: #888;
+  display: none;
+}
+
+.quick-links li a:hover span .link-icon {
+  display: inline;
+}
+
+/* Spotify playlist */
+
+.playlist {
+  list-style: none;
+  margin: 1.0em 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playlist li {
+  list-style-type: none;
+  margin: 0.50em 0 0.50em 0;
+  padding: 0;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.playlist a {
+  display: flex;
+}
+
+.playlist img {
+  width: 6.0em;
+  height: 6.0em;
+}
+
+.playlist div {
+  flex-grow: 1;
+  display: block;
+  margin-left: 0.50em;
+}
+
+.playlist div span {
+  display: block;
+  margin-top: 0.25em;
+}
+
+.playlist .track {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.playlist .album {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.playlist li a {
+  color: #ccc;
+}
+
+.playlist li a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.playlist li a .link-icon {
+  display: none;
+}
+
+.playlist li a:hover .link-icon {
+  display: inline;
+  fill: hotpink;
+}
+
+/* Site navigation */
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav.links ul {
+  font-size: 0.90em;
+  background-color: transparent;
+  text-align: center;
+  padding: 1.0em 0 1.0em 0;
+}
+
+nav.links ul li {
+  margin: 0 1.0em 0 0;
+}
+
+nav.links a {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+nav.top ul {
+  float: right;
+  text-align: right;
+  display: inline;
+  margin-right: 1.0em;
+}
+
+nav.top ul li {
+  margin-left: 1.0em;
+}
+
+nav.top a {
+  display: table-cell;
+  height: 80px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: #efefef;
+}
+
+footer span {
+  font-size: 0.85em;
+}
+
+/* Misc */
+
+.pink {
+  color: hotpink;
+}
+
+img.author {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.bullet {
+  margin-left: -2.0em;
+  margin-right: 0.75em;
+}
+
+/* Image carousel */
+
+#images {
+  position: relative;
+}
+
+#images img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #0e1111;
+  margin: 1.5em 0 1.5em 0;
+}
+
+#carousel {
+  z-index: -1;
+  position: absolute;
+  left: 75px;
+  top: 0;
+}
+
+/* Mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    font-size: 100%;
+  }
+
+  body > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #images {
+    text-align: center;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  .pink {
+    display: block;
+  }
+
+  nav.top {
+    text-align: center;
+  }
+
+  nav.top ul {
+    float: none;
+    display: block;
+    margin: 1.0em 0 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav.top a {
+    display: inline;
+    height: auto;
+    text-transform: uppercase;
+  }
+
+  .quick-links, .playlist {
+    display: block;
+    flex-wrap: unset;
+  }
+
+  .quick-links li, .playlist li {
+    flex-grow: unset;
+    width: 100%;
+  }
+}
