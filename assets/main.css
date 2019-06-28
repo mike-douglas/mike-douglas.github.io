@@ -389,4 +389,8 @@ img.author {
     flex-grow: unset;
     width: 100%;
   }
+  
+  .quick-links li:nth-child(odd) a {
+    margin-right: unset;
+  }
 }
