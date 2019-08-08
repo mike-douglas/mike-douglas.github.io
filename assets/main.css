@@ -14,7 +14,7 @@ body > * {
 /* Links */
 
 a {
-  color: hotpink;
+  color: #b71bcc;
   text-decoration: none;
 }
 
@@ -114,7 +114,7 @@ article .title a {
 }
 
 .archive h3 a:hover {
-  color: hotpink;
+  color: #b71bcc;
   text-decoration: none;
 }
 
@@ -154,7 +154,7 @@ article .title a {
 
 .quick-links li a:hover {
   text-decoration: none;
-  color: hotpink;
+  color: #b71bcc;
 }
 
 .quick-links li a span {
@@ -233,7 +233,7 @@ article .title a {
 
 .playlist li a:hover {
   text-decoration: none;
-  color: hotpink;
+  color: #b71bcc;
 }
 
 .playlist li a .link-icon {
@@ -242,7 +242,7 @@ article .title a {
 
 .playlist li a:hover .link-icon {
   display: inline;
-  fill: hotpink;
+  fill: #b71bcc;
 }
 
 /* Site navigation */
@@ -303,7 +303,7 @@ footer span {
 /* Misc */
 
 .pink {
-  color: hotpink;
+  color: #b71bcc;
 }
 
 img.author {
