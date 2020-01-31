@@ -9,12 +9,22 @@
   <meta property="og:site_name" content="directive.io">
 
   <title>
+
     {% if page.title == "Home" %}
     {{ site.title }}
     {% else %}
     {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49351028-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49351028-1');
+  </script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
