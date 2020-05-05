@@ -103,8 +103,6 @@ ReactDOM.render(
     <h2>Quick Links</h2>
     <p><span className="bullet">📚</span>Stuff I'm reading, updated constantly</p>
     <LinkFeed/>
-    <p><span className="bullet">🎧</span>Music in rotation</p>
-    <SpotifyFeed/>
   </div>,
   document.getElementById('feed-app')
 )
