@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+/* https://colorhunt.co/palette/15830 */
 
 body {
   font-size: 110%;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-rendering: optimizeLegibility;
 }
 
@@ -14,12 +14,13 @@ body > * {
 /* Links */
 
 a {
-  color: #b71bcc;
+  color: #fc5185;
   text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.50);
 }
 
 /* Basic text */
@@ -34,7 +35,6 @@ h1, h2, h3 {
   padding: 0;
   margin: 1.0em 0 1.0em 0;
   text-rendering: geometricPrecision;
-  letter-spacing: -0.05em;
   color: #222;
 }
 
@@ -106,7 +106,7 @@ article .title a {
 
 .archive h3 {
   font-size: 1.25em;
-  margin: 0.25em 1.5em 0 0;
+  margin: 0.35em 1.5em 0 0;
 }
 
 .archive h3 a {
@@ -114,7 +114,7 @@ article .title a {
 }
 
 .archive h3 a:hover {
-  color: #b71bcc;
+  color: #fc5185;
   text-decoration: none;
 }
 
@@ -122,6 +122,10 @@ article .title a {
   display: block;
   text-transform: uppercase;
   font-size: 0.85em;
+}
+
+.archive .excerpt {
+  margin: 0.75em 0 0.5em 0;
 }
 
 /* Quick links */
@@ -154,7 +158,7 @@ article .title a {
 
 .quick-links li a:hover {
   text-decoration: none;
-  color: #b71bcc;
+  color: #fc5185;
 }
 
 .quick-links li a span {
@@ -233,7 +237,7 @@ article .title a {
 
 .playlist li a:hover {
   text-decoration: none;
-  color: #b71bcc;
+  color: #fc5185;
 }
 
 .playlist li a .link-icon {
@@ -242,7 +246,7 @@ article .title a {
 
 .playlist li a:hover .link-icon {
   display: inline;
-  fill: #b71bcc;
+  fill: #fc5185;
 }
 
 /* Site navigation */
@@ -288,6 +292,7 @@ nav.top a {
   height: 80px;
   vertical-align: middle;
   text-transform: uppercase;
+  border: 0;
 }
 
 /* Footer */
@@ -303,7 +308,7 @@ footer span {
 /* Misc */
 
 .pink {
-  color: #b71bcc;
+  color: #fc5185;
 }
 
 img.author {
