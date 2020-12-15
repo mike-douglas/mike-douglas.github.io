@@ -111,6 +111,7 @@ article .title a {
 
 .archive h3 a {
   color: #333;
+  border-bottom: 0;
 }
 
 .archive h3 a:hover {
