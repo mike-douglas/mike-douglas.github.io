@@ -1,9 +1,22 @@
-/* https://colorhunt.co/palette/15830 */
+:root {
+  --main-bg-color: #2F5061;
+  --main-txt-color: #F4EAE6;
+  --main-txt-sub-color: #4297A0;
+  --main-a-color: #E57F84;
+  --main-a-sub-color: #dad0cd;
+
+  --panel-bg-color: rgba(255, 255, 255, 0.1);
+  --panel-txt-color: #888;
+  --panel-a-color: #888;
+
+  --standout-txt-color: #ECC046;
+}
 
 body {
   font-size: 110%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   text-rendering: optimizeLegibility;
+  background-color: var(--main-bg-color);
 }
 
 body > * {
@@ -14,19 +27,14 @@ body > * {
 /* Links */
 
 a {
-  color: #fc5185;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+  color: var(--main-a-color);
+  text-decoration: underline;
 }
 
 /* Basic text */
 
 p {
-  color: #634e5f;
+  color: var(--main-txt-color);
   line-height: 1.5em;
 }
 
@@ -35,7 +43,7 @@ h1, h2, h3 {
   padding: 0;
   margin: 1.0em 0 1.0em 0;
   text-rendering: geometricPrecision;
-  color: #222;
+  color: var(--main-txt-color);
 }
 
 h1 {
@@ -47,11 +55,11 @@ h2 {
 }
 
 time {
-  color: #888;
+  color: var(--main-txt-sub-color);
 }
 
 hr {
-  background-color: #fafafa;
+  background-color: var(--panel-bg-color);
   border: 0;
   height: 1.0em;
   margin: 1.5em -1.0em 1.5em -1.0em;
@@ -73,9 +81,10 @@ article .excerpt {
 }
 
 article blockquote {
-  border-left: 0.25em solid #eee;
+  border-left: 0.25em solid var(--panel-txt-color);
   padding-left: 0.25em;
-  background-color: #fafafa;
+  background-color: var(--panel-bg-color);
+  color: var(--panel-txt-color);
 }
 
 article .centerpiece {
@@ -110,13 +119,12 @@ article .title a {
 }
 
 .archive h3 a {
-  color: #333;
-  border-bottom: 0;
+  color: var(--main-a-sub-color);
+  text-decoration: none;
 }
 
 .archive h3 a:hover {
-  color: #fc5185;
-  text-decoration: none;
+  color: var(--standout-txt-color);
 }
 
 .archive time {
@@ -149,7 +157,7 @@ article .title a {
 }
 
 .quick-links li a {
-  color: #333;
+  color: var(--panel-a-color);
   display: block;
 }
 
@@ -159,23 +167,23 @@ article .title a {
 
 .quick-links li a:hover {
   text-decoration: none;
-  color: #fc5185;
+  color: var(--standout-txt-color);
 }
 
 .quick-links li a span {
   text-transform: uppercase;
   font-size: 0.85em;
-  color: #888;
+  color: var(--panel-a-color);
   display: block;
   margin-top: 0.25em;
 }
 
 .quick-links li a span:hover {
-  color: #888;
+  color: var(--panel-a-color);
 }
 
 .quick-links li a span .link-icon {
-  fill: #888;
+  fill: var(--panel-a-color);
   display: none;
 }
 
@@ -233,12 +241,12 @@ article .title a {
 }
 
 .playlist li a {
-  color: #333;
+  color: var(--panel-a-color);
 }
 
 .playlist li a:hover {
   text-decoration: none;
-  color: #fc5185;
+  color: var(--standout-txt-color);
 }
 
 .playlist li a .link-icon {
@@ -247,7 +255,7 @@ article .title a {
 
 .playlist li a:hover .link-icon {
   display: inline;
-  fill: #fc5185;
+  fill: var(--standout-txt-color);
 }
 
 /* Site navigation */
@@ -263,9 +271,10 @@ nav li {
 
 nav.links ul {
   font-size: 0.90em;
-  background-color: #fafafa;
+  background-color: var(--panel-bg-color);
   text-align: center;
   padding: 1.0em 0 1.0em 0;
+  border-radius: 0.5em;
 }
 
 nav.links ul li {
@@ -289,13 +298,15 @@ nav.top a {
   height: 80px;
   vertical-align: middle;
   text-transform: uppercase;
+  text-decoration: none;
   border: 0;
 }
 
 /* Footer */
 
-footer {
+footer, footer time {
   text-align: center;
+  color: var(--main-txt-color);
 }
 
 footer span {
@@ -304,8 +315,8 @@ footer span {
 
 /* Misc */
 
-.pink {
-  color: #fc5185;
+.standout {
+  color: var(--standout-txt-color);
 }
 
 img.author {
@@ -374,7 +385,7 @@ img.author {
     height: 100px;
   }
 
-  .pink {
+  .standout {
     display: block;
   }
 
