@@ -1,13 +1,13 @@
 :root {
-  --main-bg-color: #2F5061;
+  --main-bg-color: #2f6140;
   --main-txt-color: #F4EAE6;
-  --main-txt-sub-color: #4297A0;
+  --main-txt-sub-color: #1e3f2a;
   --main-a-color: #E57F84;
-  --main-a-sub-color: #dad0cd;
+  --main-a-sub-color: #dab141;
 
   --panel-bg-color: rgba(255, 255, 255, 0.1);
   --panel-txt-color: #888;
-  --panel-a-color: #888;
+  --panel-a-color: #E57F84;
 
   --standout-txt-color: #ECC046;
 }
@@ -271,7 +271,6 @@ nav li {
 
 nav.links ul {
   font-size: 0.90em;
-  background-color: var(--panel-bg-color);
   text-align: center;
   padding: 1.0em 0 1.0em 0;
   border-radius: 0.5em;
@@ -283,6 +282,34 @@ nav.links ul li {
 
 nav.links a {
   color: #222;
+}
+
+nav.links a.social-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: 50px 50px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+a.social-icon.instagram {
+  background: url('/assets/icons/icons8-instagram-100.png');
+}
+
+a.social-icon.twitter {
+  background: url('/assets/icons/icons8-twitter-100.png');
+}
+
+a.social-icon.linkedin {
+  background: url('/assets/icons/icons8-linkedin-100.png');
+}
+
+a.social-icon.github {
+  background: url('/assets/icons/icons8-github-100.png');
 }
 
 nav.top ul {
@@ -389,10 +416,6 @@ img.author {
     display: block;
   }
 
-  .wave {
-    display: none;
-  }
-
   nav.top {
     margin-top: 0.5em;
   }
@@ -411,20 +434,20 @@ img.author {
     text-transform: uppercase;
   }
 
+  nav.links a.social-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1.25em;
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: 50px 50px;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
   nav.links ul {
     padding: 0;
-  }
-
-  nav.links ul li {
-    padding: 0.75em 0 0.75em;
-    display: block;
-    font-size: 1.1em;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    margin: 0;
-  
-  }
-
-  nav.links li:last-child {
-    border-bottom: 0px;
   }
 }
