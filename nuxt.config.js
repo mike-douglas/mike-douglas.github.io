@@ -52,6 +52,11 @@ export default {
   build: {
   },
 
+  // Generate Configuration
+  generate: {
+    dir: 'docs'
+  },
+
   // Style resources
   styleResources: {
     scss: [
