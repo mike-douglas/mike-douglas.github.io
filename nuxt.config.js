@@ -36,6 +36,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/moment',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -62,5 +63,10 @@ export default {
     scss: [
       '~/assets/css/main.scss',
     ]
+  },
+
+  // Google analytics
+  googleAnalytics: {
+    id: 'UA-49351028-1',
   }
 }
