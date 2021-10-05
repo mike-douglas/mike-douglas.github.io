@@ -1,16 +1,9 @@
 ---
 title: The Code Review Review
-layout: post
-author: miked
-excerpt_separator: <!--more-->
+description: The Meta Code Review and why you should be doing them as an engineering leader.
 tags: [engineering, management, code reviews]
+createdAt: '2018-09-28'
 ---
-
-<p class="excerpt">
-The Meta Code Review and why you should be doing them as an engineering leader.
-</p>
-
-<!--more-->
 
 Let's talk about code reviews as a manager.
 
