@@ -11,7 +11,8 @@
 
     <footer>
       <nav>
-        Social Links
+        <h3>Start a conversation</h3>
+        <a href="https://twitter.com/intent/tweet?screen_name=miked&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false" data-size="large">Tweet this @miked</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </nav>
     </footer>
   </article>
@@ -45,6 +46,10 @@ header h1 {
 
 header time {
   color: $main-txt-sub-color;
+}
+
+footer {
+  margin-top: 4.0rem;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
