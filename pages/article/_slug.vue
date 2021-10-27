@@ -60,7 +60,14 @@ footer {
 </style>
 
 <style lang="scss">
-.article-content p {
+.article-content {
+  background-color: white;
+  color: #222;
+  margin: 0rem -2.0rem;
+  padding: 1.0rem 2.0rem;
+}
+
+.article-content p, .article-content ul, .article-content ol {
   line-height: $main-txt-line-height*1.25;
 }
 
@@ -88,7 +95,7 @@ footer {
 }
 
 .article-content h2 {
-  color: $content-txt-h2-color;
+  color: $content-txt-h3-color;
 }
 
 .article-content h3 {
