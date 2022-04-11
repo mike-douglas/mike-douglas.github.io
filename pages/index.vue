@@ -1,12 +1,12 @@
 <template>
-  <span>
+  <span class="landing-page">
     <header class="hero">
       <div class="author-image">
         <Portrait />
       </div>
       <h1>
+        <span class="wave">👋</span>
         <span class="standout">
-          <span class="wave">👋</span>
           Hi, I'm Mike.
         </span>
         I lead teams that build awesome things.
@@ -84,7 +84,9 @@ p {
 }
 
 .standout {
-  color: $standout-txt-color;
+  background: $standout-txt-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero h1 {

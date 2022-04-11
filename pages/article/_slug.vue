@@ -2,19 +2,21 @@
   <article>
     <header>
       <h1>{{ article.title }}</h1>
-      <time :datetime="article.createdAt">
-        {{ formattedCreatedAt }}
-      </time>
     </header>
-
-    <nuxt-content class="article-content" :document="article" />
-
-    <footer>
-      <nav>
-        <h3>Start a conversation</h3>
-        <a href="https://twitter.com/intent/tweet?screen_name=miked&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false" data-size="large">Tweet this @miked</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </nav>
-    </footer>
+    <div class="main">
+      <nuxt-content class="article-content" :document="article" />
+    </div>
+    <div class="sidebar">
+      <footer>
+        <time :datetime="article.createdAt">
+          {{ formattedCreatedAt }}
+        </time>
+        <nav>
+          <h3>Start a conversation</h3>
+          <a href="https://twitter.com/intent/tweet?screen_name=miked&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false" data-size="large">Tweet this @miked</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </nav>
+      </footer>
+    </div>
   </article>
 </template>
 
@@ -41,15 +43,34 @@ header {
 
 header h1 {
   font-size: $hero-txt-size;
-  color: $standout-txt-color;
+  background: $standout-txt-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-header time {
+time {
   color: $main-txt-sub-color;
 }
 
 footer {
   margin-top: 4.0rem;
+}
+
+article {
+  display: grid;
+  column-gap: 1.0rem;
+}
+
+header {
+  grid-area: 1 / 1 / 1 / span 2;
+}
+
+article .sidebar {
+  grid-area: 2 / 1 / 2 / 1;
+}
+
+article .main {
+  grid-area: 2 / 2 / 2 / 2;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
