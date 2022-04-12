@@ -1,4 +1,4 @@
 
-I'm an Engineering Leader in Providence, RI working at [Dropbox](https://dropbox.com).
+I'm an Engineering Manager in Providence, RI. I work at [Dropbox](https://dropbox.com).
 
-I'm a music nerd 🎧 and a plant person 🪴. I try to perfect my espresso technique ☕️ and I make a mean aviation cocktail 🍸.
+I like music 🎧 and I'm a plant person 🪴. I'm constantly trying to perfect my espresso technique ☕️ and I make a mean aviation cocktail 🍸.

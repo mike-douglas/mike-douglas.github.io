@@ -15,6 +15,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+nav {
+  display: flex;
+  align-items: center;
+}
+
 h1 {
   font-size: 1.5rem;
   display: inline-block;

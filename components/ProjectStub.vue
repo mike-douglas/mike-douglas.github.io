@@ -24,20 +24,12 @@ export default {
 a {
   display: inline-block;
   position: relative;
-  margin: -0.5rem 0 -0.5rem -0.5rem;
-  padding: 0.5rem 0 0.5rem 0.5rem;
   text-decoration: none;
-  color: inherit;
   border-radius: 0.5rem;
   min-height: 150px;
 }
 
-a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 h3 {
-  color: $standout-txt-color;
   display: inline;
   border-bottom: 1px solid $standout-txt-border-color;
 }
@@ -59,6 +51,7 @@ small {
 <style lang="scss">
 .stub-content p {
   margin: 0.75rem 0 0 0;
+  color: $main-txt-color;
   line-height: $main-txt-line-height;
 }
 </style>

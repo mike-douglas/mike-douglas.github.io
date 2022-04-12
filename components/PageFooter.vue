@@ -3,7 +3,6 @@
     <ul>
       <li><a href="https://twitter.com/miked" class="twitter">@miked</a></li>
       <li><a href="https://github.com/mike-douglas" class="github">Github</a></li>
-      <!-- <li><a href="https://www.instapaper.com/p/miked" class="instapaper">Instapaper</a></li> -->
       <li><a href="https://instagram.com/thisismiked" class="instagram">Instagram</a></li>
       <li><a href="https://www.linkedin.com/in/michael-douglas-a6a1b180/" class="linkedin">Linkedin</a></li>
       <!-- <li><a href="https://standardresume.co/r/mike-douglas" class="resume">Resume</a></li> -->
@@ -23,10 +22,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   footer {
     margin: 4.0rem 0 2.0rem 0;
     text-align: center;
+    color: $main-txt-sub-color;
   }
 
   ul {

@@ -22,17 +22,21 @@ export default {
 ul {
   list-style: none;
   padding: 0;
-  display: table-row;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li {
-  display: table-cell;
-  width: 50%;
+  width: 20rem;
   vertical-align: top;
-  padding: 0.25rem;
+  padding: 0 0.25rem 1.5rem 0.25rem;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  ul {
+    display: block;
+  }
+
   li {
     display: block;
     width: 100%;

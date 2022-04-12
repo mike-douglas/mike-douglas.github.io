@@ -75,8 +75,8 @@ p {
 }
 
 .author-image img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .author-image {
