@@ -30,7 +30,7 @@ a.ti {
 }
 
 .main-footer a {
-  color: white;
+  color: var(--gainsboro);
 }
 
 article.single header h1, .highlighted {
