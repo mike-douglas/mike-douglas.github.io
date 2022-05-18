@@ -33,7 +33,7 @@ section>header {
 
 .centered {
   margin: 0 auto 0 auto;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 .main {
@@ -105,7 +105,7 @@ article.single header h1 {
 
 article .meta {
   font-size: 0.95rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 article .meta ul {
@@ -132,8 +132,12 @@ article header h1 {
   font-size: 1.5rem;
 }
 
+article h2, article h3, article h4, article h5 {
+  margin: 1.5rem 0 1.0rem 0;
+}
+
 article .excerpt, article .body, article .body ul, article .body ol {
-  line-height: 1.85rem;
+  line-height: 1.95rem;
 }
 
 article figure {
@@ -169,6 +173,20 @@ article figure.kg-width-wide {
 
 article figcaption {
   margin: 0.25rem;
+  text-align: center;
+}
+
+article figcaption, article figcaption a {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+article .feature-image {
+  margin-bottom: 1.0rem;
+}
+
+article .feature-image figcaption {
+  text-align: right;
 }
 
 article .feature-image div {

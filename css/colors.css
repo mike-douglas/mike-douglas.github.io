@@ -51,6 +51,9 @@ article .meta a {
 
 article figcaption, article figcaption a {
   color: var(--robin-egg-blue) !important;
-  font-size: 0.8rem;
-  text-align: right;
+}
+
+article figure img {
+  border: 1px solid var(--cultured);
+  box-shadow: 0.15rem 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
 }
