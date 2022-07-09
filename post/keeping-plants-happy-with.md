@@ -237,7 +237,7 @@ It took some fiddling with the metric query but I landed on the following for al
 holt_winters(soil_moisture{sensor="soil02"}[$__range], .2, .8)
 ```
 
-The `[holt_winters(v, sf, tf)](https://prometheus.io/docs/prometheus/latest/querying/functions/#holt_winters)` query function smoothes the time series out well enough to see the trends over a period of ~12 hours, in my experience. When I bring a new sensor online, it only takes a few minutes of readings for things to level out, but after that it's gold.
+The `holt_winters(v, sf, tf)` [function](https://prometheus.io/docs/prometheus/latest/querying/functions/#holt_winters) function smoothes the time series out well enough to see the trends over a period of ~12 hours, in my experience. When I bring a new sensor online, it only takes a few minutes of readings for things to level out, but after that it's gold.
 
 ### Alerting
 

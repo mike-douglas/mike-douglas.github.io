@@ -11,6 +11,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+
   font-family: 'Merriweather', serif;
 }
 
@@ -56,6 +59,7 @@ header.page {
 
 footer.page {
   margin-top: 4.0rem;
+  margin-bottom: 1.0rem;
 }
 
 img#logo {
@@ -102,6 +106,7 @@ footer.page nav a {
 /* Hero page styles */
 
 header#hero h1 {
+  margin: 1.0rem 0 0 0;
   font-size: 5.0rem;
 }
 
@@ -158,8 +163,11 @@ figure.feature {
   left: 0;
 }
 
-figure.feature div {
+figure.feature div, div.feature-spacer {
   height: 400px;
+}
+
+figure.feature div {
   width: 100%;
 
   padding: 0;
@@ -170,13 +178,61 @@ figure.feature div {
 }
 
 figure.wide {
-  margin: 0 -3.0rem;
+  margin: 0 -2.0rem;
 }
 
 @media only screen and (max-width : 1280px) {
+  .page {
+    margin: 0;
+    padding: 1.0rem;
+    width: auto;
+  }
 
+  img#logo {
+    margin: 1.0rem 8.0rem 1.0rem 1.0rem;
+  }
+
+  header#hero h1 {
+    font-size: 3.0rem;
+  }
+
+  header#hero img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width : 480px) {
+  header.page {
+    display: block;
+  }
 
+  header.page nav {
+    margin: 1.0rem;
+    gap: 2.0rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  #home-circle-background, #content-page-circle-background {
+    display: none;
+  }
+
+  figure.wide {
+    margin: 0;
+  }
+
+  figure.feature div, div.feature-spacer {
+    height: 200px;
+  }
 }
