@@ -20,38 +20,41 @@
     </style>
   </head>
   <body>
-    <div class="main-content">
-      <div class="centered">
-        <header class="hero">
-  <h1>Directive</h1>
-</header>
+    <header class="page">
+      <img id="logo" src="/images/logo.svg" alt="directive.io">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/archive">Archive</a>
+      </nav>
+    </header>
+    <section class="page">
+      
+<svg id="content-page-circle-background" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="50" />
+</svg>
 
-<nav class="main-nav" role="navigation">
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/archive">Archive</a></li>
-  </ul>
-</nav>
-<article class="single">
+<article class="readable-width">
   <header>
     <h1>Keeping plants happy with sensors and automation</h1>
   </header>
 
   <section class="meta">
     <ul>
-      <li class="time">
+      <li>
         <time>Tue May 24 2022</time>
       </li>
     </ul>
   </section>
 
-  <section class="body">
+  <section>
     
-    <figure class="feature-image">
+    <figure class="feature">
       <div style="background-image: url('/images/plant_sensors_vis.gif');"></div>
       <figcaption></figcaption>
     </figure>
+    <div class="feature-spacer"></div>
     
+
     <p>I've been growing my green thumb for a few years and have honed my plant care skills enough to amass a pretty healthy collection of green friends. A goal of mine last year was to finally get more comfortable with electronics, take on a few small projects, and learn a bit about circuit design and electrical components. Being a home automation nerd, I thought it would be fun to do a project that would help support my houseplant hobby.</p>
 <p>So I dusted off some old <a href="http://arduino.cc">Arduino</a> boards, and a box of parts I got on sale many years ago (RIP Radio Shack) and set off to learn and build something. <strong>The goal: monitor the moisture level of the soil for my houseplants and alert me when they need watering.</strong></p>
 <p>In this post I'll go through the hardware, software, monitoring, and alerting I put together in to keep my little plant sanctuary happy and thriving.</p>
@@ -240,7 +243,7 @@ soil_moisture{sensor=&quot;01&quot;,reader=&quot;arduino1&quot;} 220
 <p>It took some fiddling with the metric query but I landed on the following for all of my sensors:</p>
 <pre><code class="language-promql">holt_winters(soil_moisture{sensor=&quot;soil02&quot;}[$__range], .2, .8)
 </code></pre>
-<p>The <code>[holt_winters(v, sf, tf)](https://prometheus.io/docs/prometheus/latest/querying/functions/#holt_winters)</code> query function smoothes the time series out well enough to see the trends over a period of ~12 hours, in my experience. When I bring a new sensor online, it only takes a few minutes of readings for things to level out, but after that it's gold.</p>
+<p>The <code>holt_winters(v, sf, tf)</code> <a href="https://prometheus.io/docs/prometheus/latest/querying/functions/#holt_winters">function</a> function smoothes the time series out well enough to see the trends over a period of ~12 hours, in my experience. When I bring a new sensor online, it only takes a few minutes of readings for things to level out, but after that it's gold.</p>
 <h3>Alerting</h3>
 <p>The final piece is alerting. Remember the goal from the beginning of this post? <strong>I want my plants to alert me when they needed watering!</strong> Thankfully Grafana makes this super easy.</p>
 <p>I set up an alert for each sensor, so I now have these:</p>
@@ -274,21 +277,18 @@ soil_moisture{sensor=&quot;01&quot;,reader=&quot;arduino1&quot;} 220
 </ul>
 <p>I hope you enjoyed following this post as much as I did writing it! If you've done something similar, want to do something like this, or just want to chat about it, please hit me up on <a href="https://twitter.com/miked">Twitter</a>!</p>
 
+
   </section>
 </article>
-      </div>
-    </div>
-    <footer class="main-footer">
-      <div class="centered">
-        <nav class="socials">
-          <ul>
-            <li><a href="https://twitter.com/miked" class="ti ti-brand-twitter"></a></li>
-            <li><a href="https://instagram.com/thisismiked" class="ti ti-brand-instagram"></a></li>
-            <li><a href="https://github.com/mike-douglas" class="ti ti-brand-github"></a></li>
-          </ul>
-        </nav>
-        Copyright 2022 directive.io
-      </div>
+
+    </section>
+    <footer class="page">
+      <nav>
+        <a href="https://twitter.com/miked" class="ti ti-brand-twitter"></a>
+        <a href="https://instagram.com/thisismiked" class="ti ti-brand-instagram"></a>
+        <a href="https://github.com/mike-douglas" class="ti ti-brand-github"></a>
+      </nav>
+      Copyright 2022 directive.io
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

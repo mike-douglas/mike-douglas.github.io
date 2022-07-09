@@ -1,59 +1,82 @@
 :root {
-  /* https://coolors.co */
-  --orange-red-crayola: hsla(1, 100%, 68%, 1);
-  --gainsboro: hsla(0, 0%, 85%, 1);
-  --cultured: hsla(0, 0%, 96%, 1);
-  --ivory: hsla(60, 100%, 96%, 1);
-  --robin-egg-blue: hsla(179, 100%, 40%, 1);
-  --corn: hsla(53, 100%, 70%, 1);
+  --black-pearl: #04061f;
+  --raisin-black: #221D23;
+  --wintergreen-dream: #5F9588;
+  --english-violet: #413C58;
+  --opal: #A3C4BC;
+  --foam: #edfdfd;
+  --bright-sun: #fdd142;
+  --aquamarine-blue: #5ae0d7;
+  --pale-sky: #6c707b;
+  --french-gray: #bcbcbd;
+  --cerulean: #01a0e2;
+  --pine-green: #027a79;
+  --alizarin-crimson: #e41c2a;
+  --middle-red: #F78E69;
+  --copper-red: #D1603D;
+  --west-coast: #5c421c;
 }
 
-.main-content a {
-  color: var(--robin-egg-blue);
+body {
+  background-color: var(--foam);
+
+  color: var(--black-pearl);
 }
 
-.main-content a:hover {
-  color: var(--corn);
+#home-circle-background, #content-page-circle-background {
+  fill: var(--bright-sun);
 }
 
-a.ti {
+a {
+  color: var(--pale-sky);
+}
+
+h1 a, h2 a, h3 a {
   text-decoration: none;
 }
 
-.main-content {
-  background: white;
-  color: #383838;
+/* Header and footer colors */
+
+footer.page {
+  color:rgba(0, 0, 0, 0.30);
 }
 
-.main-footer {
-  color: var(--gainsboro);
+/* Hero page colors */
+
+header#hero h1 {
+  color: var(--west-coast);
 }
 
-.main-footer a {
-  color: var(--gainsboro);
+header#hero h1 .special {
+  color: var(--wintergreen-dream);
 }
 
-article.single header h1, .highlighted {
-  color: var(--orange-red-crayola);
+/* Blog posts */
+
+.meta {
+  color: rgba(0, 0, 0, 0.30);
 }
 
-article header a {
-  color: var(--orange-red-crayola);
+article h1 {
+  color: var(--english-violet);
 }
 
-article .meta {
-  color: var(--gainsboro);
-}
+@media only screen and (max-width : 480px) {
+  header.page {
+    overflow: hidden;
+    position: relative;
+  }
 
-article .meta a {
-  color: var(--gainsboro);
-}
-
-article figcaption, article figcaption a {
-  color: var(--robin-egg-blue) !important;
-}
-
-article figure img {
-  border: 1px solid var(--cultured);
-  box-shadow: 0.15rem 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
+  header.page::after {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    left: -300px;
+    right: 0;
+    border-radius: 50%;
+    bottom: 0;
+    background: var(--bright-sun);
+    z-index: -1;
+  }
 }
