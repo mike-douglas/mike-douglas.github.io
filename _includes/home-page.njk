@@ -1,0 +1,42 @@
+---
+layout: page.njk
+---
+<div class="centered">
+  <header class="hero">
+    <img src="/images/me.jpg" alt="Portrait">
+    <h1>👋 <span class="highlighted">Hi, I'm Mike.</span> I lead teams that build awesome things.</h1>
+  </header>
+
+  <section class="main">
+    <article>
+      <section class="body">
+        {{ content | safe }}
+      </section>
+    </article>
+  </section>
+  <section>
+    <header>
+      <h2>Posts</h2>
+    </header>
+  {%- for post in collections.post | reverse | limit(2) -%}
+    <article class="list">
+      <header>
+        <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+      </header>
+      <section class="meta">
+        <ul>
+          <li class="time">
+            <time>{{ post.data.date.toDateString() }}</time>
+          </li>
+        </ul>
+      </section>
+      <section class="excerpt">
+        {{ post.data.excerpt }}
+      </section>
+    </article>
+  {%- endfor -%}
+    <footer>
+      More posts at <a href="/archive/">archive/</a>
+    </footer>
+  </section>
+</div>
