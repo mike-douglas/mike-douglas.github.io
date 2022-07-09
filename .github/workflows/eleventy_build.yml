@@ -21,9 +21,8 @@ jobs:
       
       - name: Build site
         run: |
-          npm install --dev
+          npm install --include=dev
           npx eleventy
-          cp CNAME _site/CNAME
 
       - uses: peaceiris/actions-gh-pages@v3
         name: Deploy
