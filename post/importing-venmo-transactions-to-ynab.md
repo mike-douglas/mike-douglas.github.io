@@ -1,9 +1,8 @@
 ---
 title: Importing Venmo transactions into YNAB
 slug: importing-venmo-transactions-to-ynab
+layout: post
 date: 2021-10-26
-date_published: 2021-10-26T04:00:00.000Z
-date_updated: 2022-05-06T17:10:07.000Z
 tags:
     - post
     - Project
@@ -33,14 +32,18 @@ First, check out the [repo](https://github.com/mike-douglas/venmo2ynab), then `c
 
 Then in the command line, run:
 
-    sudo pip3 install .
+```bash
+sudo pip3 install .
+```
 
 You'll know it's successful when it finishes and when you type `venmo2ynab --help` in the CLI, you see this:
 
-    Usage: venmo2ynab [OPTIONS] [INPUT_FILES]... OUTPUT_FILE
-    
-    Options:
-      --help  Show this message and exit.
+```bash
+Usage: venmo2ynab [OPTIONS] [INPUT_FILES]... OUTPUT_FILE
+
+Options:
+    --help  Show this message and exit.
+```
 
 ## Using the script
 
@@ -49,9 +52,17 @@ Below I'll outline the process that I go through to get my Venmo transactions in
 ### Step One: Download your Venmo statement
 
 [Log into Venmo](https://venmo.com/account/sign-in), then go to your statements page:
-![Find Your Statements in the Venmo Sidebar](/images/1-export-statement.png)
+
+{% image "/images/1-export-statement.png" %}
+    Find Your Statements in the Venmo Sidebar
+{% endimage %}
+
 Change the dropdown at the top of the page to "Past 60 days" or whatever timeframe you'd like. The page will update and you'll see the table of transactions further down reflect this time period.
-![Export Your Statement from Venmo](/images/1-go-to-statements.png)
+
+{% image "/images/1-go-to-statements.png" %}
+    Export Your Statement from Venmo
+{% endimage %}
+
 Click the "Download CSV" button to download a file on to your computer with all of the transactions that you have selected with that dropdown. It'll be called `venmo_statement.csv`, note where it saves the file (in Mac OS, it puts it in your Downloads folder by default).
 
 ### Step Two: Convert your Venmo statement for YNAB
@@ -60,22 +71,34 @@ In this step, you'll use `venmo2ynab` to turn that downloaded statement to one t
 
 Open your terminal and locate the `venmo_statement.csv` file, and change to the directory:
 
-    $ cd ~/Downloads
-    $ ls
-    venmo_statement.csv
+```bash
+$ cd ~/Downloads
+$ ls
+venmo_statement.csv
+```
 
 Next, run `venmo2ynab`, providing the Venmo CSV as the first argument and a **new** filename for where you want to save the YNAB-compatible CSV content:
 
-    venmo2ynab venmo_statement.csv to_ynab.csv
+```bash
+venmo2ynab venmo_statement.csv to_ynab.csv
+```
 
 If successful, you won't see any output. You can always open up the `to_ynab.csv` file to make sure everything looks good. On to the final step!
 
 ### Step Three: Importing transactions into YNAB
 
 In [YNAB](https://app.youneedabudget.com), locate your Venmo account and click the "File Import" button and click it. Locate your `to_ynab.csv` file and upload it (Hint: you can also drag and drop the CSV file into YNAB when your Venmo account is selected!)
-![Import Your Venmo Transactions into YNAB](/images/2-import-into-ynab.png)
+
+{% image "/images/2-import-into-ynab.png" %}
+    Import Your Venmo Transactions into YNAB
+{% endimage %}
+
 You'll be able to preview what's being imported in the next window. It's always worth glancing over it and making sure that Payees and Memos line up. You don't need to change any of the options in the dialog, just click "Import" when you're ready!
-![Preview Your Imported Venmo Transactions](/images/2-preview-import.png)
+
+{% image "/images/2-preview-import.png" %}
+    Preview Your Imported Venmo Transactions
+{% endimage %}
+
 On success, YNAB will tell you how many transactions were imported, and how many were skipped. It's smart enough to skip already-imported transactions, so you can run this process as often as you'd like!
 
 Now you have new transactions to categorize and approve with all of your most recent Venmo transactions imported!

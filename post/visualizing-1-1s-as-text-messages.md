@@ -1,9 +1,8 @@
 ---
 title: "Visualizing 1:1s as text message convos"
-slug: visualizing-1-1s-as-text-messages
+feature: /images/1-1-Flows-1.png
+layout: post
 date: 2022-05-18
-date_published: 2022-05-18T19:02:29.000Z
-date_updated: 2022-05-18T20:28:35.000Z
 tags:
   - post
   - Leadership
@@ -19,7 +18,10 @@ Knowing when to steer this flow of conversation can help lead to a more engaging
 
 ## The status report
 
-![The status report 1:1](/images/One-Sided--DR--Small.png)Status report – one person (usually the direct report) doing most the talking.
+{% image "/images/One-Sided--DR--Small.png" %}
+  Status report – one person (usually the direct report) doing most the talking.
+{% endimage %}
+
 The first of the three types of 1:1 flows is a status report. When someone in the call has something to report on, a status or some news about a project, the conversation tends to be one-sided. This also happens sometimes when there's not much else to talk about: for new managers or very junior folks this is often a safe topic to spend some time on.
 
 It's perfectly okay for these style of 1:1s to happen. Sometimes understanding where a project is will help you unblock others or make it easier for you to communicate up and out the status. However, if they become the norm it's worth thinking about some ways to steer the conversation away from execution and project status. If you're a manager that attends standups or someone more senior, chances are this information is redundant and can be collected elsewhere.
@@ -33,7 +35,10 @@ There are some ways to steer the conversation in a new direction without taking 
 
 ## The comms 1:1
 
-![The comms 1:1](/images/One-Sided--Manager--Small.png)The comms 1:1 – when the manager or more senior person has some information to share.
+{% image "/images/One-Sided--Manager--Small.png" %}
+  The comms 1:1 – when the manager or more senior person has some information to share.
+{% endimage %}
+
 Like the status report, the comms 1:1 is generally a one-sided conversation where the manager or more senior person is delivering a status or an announcement to the other attendee. For this archetype, I assume you are the person delivering the comms 1:1 topic.
 
 As a manager it's your job to provide context and help connect direct reports' work to the bigger picture. A 1:1 is a great place to reinforce these ideas, and can often lead to great conversations about growth opportunities and goals.
@@ -46,7 +51,10 @@ If you find that these conversations tend to be *too* one-sided too often, try c
 
 ## The volley
 
-![The volley 1:1](/images/Flow-Small.png)Volley – when there feels like it's an equal exchange of ideas, thoughts, and questions.
+{% image "/images/Flow-Small.png" %}
+  Volley – when there feels like it's an equal exchange of ideas, thoughts, and questions.
+{% endimage %}
+
 The last archetype is one that I personally enjoy the most. For the observant reader, you might have picked up that my recommendations for steering the conversation in the previous two attempt to move the flow into one resembling a volley. In this type of 1:1 the two parties are taking about equal amounts of conversation real estate and having an engaged conversation.
 
 In these 1:1s questions are being asked in both directions and a dialogue is evolving. Sometimes there's an agenda and sometimes not. For me, these are times where you're building rapport, trust, and getting to know one another.
