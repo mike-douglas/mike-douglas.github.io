@@ -1,14 +1,17 @@
 ---
 layout: page.njk
 ---
-<header class="hero">
-  <h1>Directive</h1>
+<header>
+  <h1>{ directive.io }</h1>
 </header>
 
-<nav class="main-nav" role="navigation">
+<nav role="navigation">
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/archive">Archive</a></li>
   </ul>
 </nav>
-{{ content | safe }}
+
+<section>
+  {{ content | safe }}
+</section>

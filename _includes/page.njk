@@ -20,22 +20,16 @@
     </style>
   </head>
   <body>
-    <div class="main-content">
-      <div class="centered">
-        {{ content | safe }}
-      </div>
-    </div>
-    <footer class="main-footer">
-      <div class="centered">
-        <nav class="socials">
-          <ul>
-            <li><a href="https://twitter.com/miked" class="ti ti-brand-twitter"></a></li>
-            <li><a href="https://instagram.com/thisismiked" class="ti ti-brand-instagram"></a></li>
-            <li><a href="https://github.com/mike-douglas" class="ti ti-brand-github"></a></li>
-          </ul>
-        </nav>
-        Copyright 2022 directive.io
-      </div>
+    {{ content | safe }}
+    <footer>
+      <nav id="socials">
+        <ul>
+          <li><a href="https://twitter.com/miked" class="ti ti-brand-twitter"></a></li>
+          <li><a href="https://instagram.com/thisismiked" class="ti ti-brand-instagram"></a></li>
+          <li><a href="https://github.com/mike-douglas" class="ti ti-brand-github"></a></li>
+        </ul>
+      </nav>
+      Copyright 2022 directive.io
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

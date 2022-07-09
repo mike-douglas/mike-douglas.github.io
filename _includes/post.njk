@@ -1,26 +1,28 @@
 ---
 layout: content-page.njk
 ---
-<article class="single">
+<article>
   <header>
     <h1>{{ title }}</h1>
   </header>
 
-  <section class="meta">
+  <section>
     <ul>
-      <li class="time">
+      <li>
         <time>{{ page.date.toDateString() }}</time>
       </li>
     </ul>
   </section>
 
-  <section class="body">
+  <section>
     {% if feature %}
-    <figure class="feature-image">
+    <figure>
       <div style="background-image: url('{{ feature }}');"></div>
       <figcaption>{{ feature_caption }}</figcaption>
     </figure>
     {% endif %}
+
     {{ content | safe }}
+
   </section>
 </article>
