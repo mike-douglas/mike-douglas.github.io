@@ -19,7 +19,8 @@ jobs:
       
       - name: Build site
         run: |
-          eleventy
+          npm install --dev
+          npx eleventy
 
       - uses: peaceiris/actions-gh-pages@v3
         name: Deploy
