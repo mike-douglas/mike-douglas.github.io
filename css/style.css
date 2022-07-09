@@ -106,7 +106,7 @@ footer.page nav a {
 /* Hero page styles */
 
 header#hero h1 {
-  margin: 1.0rem 0 0 0;
+  margin: 1.5rem 0 0 0;
   font-size: 5.0rem;
 }
 
@@ -181,6 +181,10 @@ figure.wide {
   margin: 0 -2.0rem;
 }
 
+.gallery-row {
+  display: flex;
+}
+
 @media only screen and (max-width : 1280px) {
   .page {
     margin: 0;
@@ -234,5 +238,9 @@ figure.wide {
 
   figure.feature div, div.feature-spacer {
     height: 200px;
+  }
+
+  .gallery-row {
+    display: block;
   }
 }
