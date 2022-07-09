@@ -1,6 +1,6 @@
 ---
 layout: home-page.njk
-title: directive.io
+title: hello
 ---
 
 I'm an Engineering Manager in Providence, RI. I work at [Dropbox](https://dropbox.com).

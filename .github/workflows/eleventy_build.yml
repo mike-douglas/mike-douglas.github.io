@@ -1,0 +1,28 @@
+name: Publish website
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Check out code
+      
+      - uses: actions/setup-node@v3
+        name: Setup Node
+        with:
+          node-version: '18.5'
+      
+      - name: Build site
+        run: |
+          eleventy
+
+      - uses: peaceiris/actions-gh-pages@v3
+        name: Deploy
+        with:
+          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
