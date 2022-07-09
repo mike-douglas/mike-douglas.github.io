@@ -23,6 +23,7 @@ jobs:
         run: |
           npm install --dev
           npx eleventy
+          cp CNAME _site/CNAME
 
       - uses: peaceiris/actions-gh-pages@v3
         name: Deploy
