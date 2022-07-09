@@ -1,3 +1,15 @@
 :root {
-  
+  --black-pearl: #04061f;
+  --foam: #edfdfd;
+  --bright-sun: #fdd142;
+}
+
+body {
+  background-color: var(--foam);
+
+  color: var(--black-pearl);
+}
+
+#home-circle-background, #content-page-circle-background {
+  fill: var(--bright-sun);
 }

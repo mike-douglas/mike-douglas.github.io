@@ -1,21 +1,29 @@
 ---
 layout: page.njk
 ---
-<header>
-  <h1>Hello</h1>
+<svg id="home-circle-background" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="50" />
+</svg>
+
+<header id="hero">
+  <img src="/images/me.jpg">
+  <h1><span class="special">Hi, I'm Mike.</special> I lead teams that build awesome things.</h1>
 </header>
 
-<section>
+<section class="readable-width">
   {{ content | safe }}
 </section>
 
-<section>
+<section class="readable-width">
+  <header>
+    <h1>Posts</h1>
+  </header>
   {%- for post in collections.post | reverse | limit(2) -%}
   <article>
     <header>
-      <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+      <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     </header>
-    <section>
+    <section class="meta">
       <ul>
         <li>
           <time>{{ post.data.date.toDateString() }}</time>

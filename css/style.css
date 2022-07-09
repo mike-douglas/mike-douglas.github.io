@@ -1,12 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans&family=Oswald:wght@300;400;700&display=swap');
+
+
 body {
   margin: 0;
   padding: 0;
 
-  font-size: 120%;
+  font-size: 115%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
 
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+article {
+  margin: 1.0rem 0 2.0rem;
+}
+
+section {
+  margin-bottom: 1.0rem;
+}
+
+p, li, ol, blockquote {
+  line-height: 2.0rem;
+}
+
+.readable-width {
+  max-width: 60rem;
+}
+
+/* Heading, nav, footer for all pages */
+
+.page {
+  margin: auto;
+  max-width: 80rem;
+}
+
+header.page {
+  display: flex;
+  align-items: center;
+}
+
+footer.page {
+  margin-top: 4.0rem;
+}
+
+img#logo {
+  width: 175px;
+  margin: 5.0rem 15.0rem 5.0rem 0;
+}
+
+.page nav {
+  display: flex;
+}
+
+.page nav a {
+  text-decoration: none;
+}
+
+header.page nav {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 130%;
+  gap: 3.0rem;
+}
+
+footer.page nav {
+  gap: 1.0rem;
+  margin-bottom: 1.0rem;
+}
+
+footer.page nav a {
+  font-size: 2.0rem;
+}
+
+#content-page-circle-background {
+  position: absolute;
+  
+  top: -1400px;
+  left: -800px;
+
+  width: 1800px;
+  height: 1800px;
+
+  z-index: -1;
+}
+
+/* Hero page styles */
+
+header#hero h1 {
+  font-size: 5.0rem;
+}
+
+header#hero img {
+  width: 175px;
+  height: 175px;
+
+  border-radius: 50%;
+}
+
+#home-circle-background {
+  position: absolute;
+  
+  top: -120px;
+  left: -800px;
+
+  width: 1800px;
+  height: 1800px;
+
+  z-index: -1;
+}
+
+/* Blog posts */
+
+.meta ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meta {
+  font-size: 0.95rem;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure figcaption {
+  font-size: 0.90rem;
+}
+
+figure.feature {
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+
+  position: absolute;
+  left: 0;
+}
+
+figure.feature div {
+  height: 400px;
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  background-size: cover;
+  background-position: bottom center;
+}
+
+figure.wide {
+  margin: 0 -3.0rem;
 }
 
 @media only screen and (max-width : 1280px) {

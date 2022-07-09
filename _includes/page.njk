@@ -20,14 +20,21 @@
     </style>
   </head>
   <body>
-    {{ content | safe }}
-    <footer>
-      <nav id="socials">
-        <ul>
-          <li><a href="https://twitter.com/miked" class="ti ti-brand-twitter"></a></li>
-          <li><a href="https://instagram.com/thisismiked" class="ti ti-brand-instagram"></a></li>
-          <li><a href="https://github.com/mike-douglas" class="ti ti-brand-github"></a></li>
-        </ul>
+    <header class="page">
+      <img id="logo" src="/images/logo.svg" alt="directive.io">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/archive">Archive</a>
+      </nav>
+    </header>
+    <section class="page">
+      {{ content | safe }}
+    </section>
+    <footer class="page">
+      <nav>
+        <a href="https://twitter.com/miked" class="ti ti-brand-twitter"></a>
+        <a href="https://instagram.com/thisismiked" class="ti ti-brand-instagram"></a>
+        <a href="https://github.com/mike-douglas" class="ti ti-brand-github"></a>
       </nav>
       Copyright 2022 directive.io
     </footer>

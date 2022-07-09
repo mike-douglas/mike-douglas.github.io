@@ -8,9 +8,9 @@ layout: content-page.njk
 {%- for post in collections.post | reverse -%}
 <article>
   <header>
-    <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
   </header>
-  <section>
+  <section class="meta">
     <ul>
       <li>
         <time>{{ post.data.date.toDateString() }}</time>
