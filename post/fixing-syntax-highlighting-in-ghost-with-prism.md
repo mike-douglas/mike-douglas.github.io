@@ -18,9 +18,9 @@ Most of the tutorial is still applicable – copy the CSS and the JS for `prism.
 **To fix code samples using a modern version of Prism, you must do this additional final step:**
 
 In the list of files in [CDNJS for Prism](https://cdnjs.com/libraries/prism), make sure to add the `prism-autoloader` script tag to your footer:
-![](__GHOST_URL__/content/images/2022/05/Screen-Shot-2022-05-18-at-10.32.11-PM.png)
+![](/images/Screen-Shot-2022-05-18-at-10.32.11-PM.png)
 This additional script will detect the languages it needs to load additional syntax js/css files for. In newer versions of Prism, this has been split out into this new module that you need to include for syntax highlighting to work fully.
 
 Your "Site Footer" section in Ghost admin Code Injection settings will look something like this:
-![](__GHOST_URL__/content/images/2022/05/Screen-Shot-2022-05-18-at-10.36.13-PM.png)
+![](/images/Screen-Shot-2022-05-18-at-10.36.13-PM.png)
 Once you save, your code samples should now have the correct syntax highlighting features!

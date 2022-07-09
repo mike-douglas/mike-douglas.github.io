@@ -49,9 +49,9 @@ Below I'll outline the process that I go through to get my Venmo transactions in
 ### Step One: Download your Venmo statement
 
 [Log into Venmo](https://venmo.com/account/sign-in), then go to your statements page:
-![Find Your Statements in the Venmo Sidebar](__GHOST_URL__/content/images/2022/05/1-export-statement.png)
+![Find Your Statements in the Venmo Sidebar](/images/1-export-statement.png)
 Change the dropdown at the top of the page to "Past 60 days" or whatever timeframe you'd like. The page will update and you'll see the table of transactions further down reflect this time period.
-![Export Your Statement from Venmo](__GHOST_URL__/content/images/2022/05/1-go-to-statements.png)
+![Export Your Statement from Venmo](/images/1-go-to-statements.png)
 Click the "Download CSV" button to download a file on to your computer with all of the transactions that you have selected with that dropdown. It'll be called `venmo_statement.csv`, note where it saves the file (in Mac OS, it puts it in your Downloads folder by default).
 
 ### Step Two: Convert your Venmo statement for YNAB
@@ -73,9 +73,9 @@ If successful, you won't see any output. You can always open up the `to_ynab.csv
 ### Step Three: Importing transactions into YNAB
 
 In [YNAB](https://app.youneedabudget.com), locate your Venmo account and click the "File Import" button and click it. Locate your `to_ynab.csv` file and upload it (Hint: you can also drag and drop the CSV file into YNAB when your Venmo account is selected!)
-![Import Your Venmo Transactions into YNAB](__GHOST_URL__/content/images/2022/05/2-import-into-ynab.png)
+![Import Your Venmo Transactions into YNAB](/images/2-import-into-ynab.png)
 You'll be able to preview what's being imported in the next window. It's always worth glancing over it and making sure that Payees and Memos line up. You don't need to change any of the options in the dialog, just click "Import" when you're ready!
-![Preview Your Imported Venmo Transactions](__GHOST_URL__/content/images/2022/05/2-preview-import.png)
+![Preview Your Imported Venmo Transactions](/images/2-preview-import.png)
 On success, YNAB will tell you how many transactions were imported, and how many were skipped. It's smart enough to skip already-imported transactions, so you can run this process as often as you'd like!
 
 Now you have new transactions to categorize and approve with all of your most recent Venmo transactions imported!

@@ -15,6 +15,12 @@ layout: content-page.njk
   </section>
 
   <section class="body">
+    {% if feature %}
+    <figure class="feature-image">
+      <div style="background-image: url('{{ feature }}');"></div>
+      <figcaption>{{ feature_caption }}</figcaption>
+    </figure>
+    {% endif %}
     {{ content | safe }}
   </section>
 </article>
