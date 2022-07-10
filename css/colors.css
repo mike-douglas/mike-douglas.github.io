@@ -57,9 +57,8 @@ footer.page {
   color:rgba(0, 0, 0, 0.30);
 }
 
-img#logo {
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 1.0rem;
+header.page a.current {
+  color: var(--west-coast);
 }
 
 /* Hero page colors */
@@ -92,7 +91,7 @@ article h1 {
     width: 800px;
     height: 800px;
     
-    top: -550px;
-    left: -300px;
+    top: -600px;
+    left: -250px;
   }
 }

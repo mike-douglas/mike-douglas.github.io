@@ -1,4 +1,6 @@
 ---
 layout: archive.njk
-title: All Posts
+title: Posts
+tags: page
+date: 2022-04-01
 ---

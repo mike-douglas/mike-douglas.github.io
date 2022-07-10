@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#fdd142">
+
     <title>directive.io - {{ title }}</title>
 
     <link rel="stylesheet" href="/css/colors.css">
@@ -11,7 +12,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <style>
         pre[class*=language-] {
@@ -24,11 +25,19 @@
     <header class="page">
       <img id="logo" src="/images/logo.svg" alt="directive.io">
       <nav>
-        <a href="/">Home</a>
-        <a href="/archive">Archive</a>
+        {%- for navPage in collections.page | reverse -%}
+        <a {% if page.url == navPage.url %} aria-current="page" class="current"{% endif %} href="{{ navPage.url }}">{{ navPage.data.title }}</a>
+        {%- endfor -%}
       </nav>
     </header>
     <section class="page">
+      {% if hero %}
+      <header id="hero">
+        {% if heroImage %}<img src="{{ heroImage }}">{% endif %}
+        <h1><span class="special">{{ heroSpecial }}</span> {{ hero }}</h1>
+      </header>
+      {% endif %}
+
       {{ content | safe }}
     </section>
     <footer class="page">
