@@ -30,6 +30,7 @@ jobs:
           cd app
           npm install
           npm run build
+          mkdir -p ../js
           cp dist/assets/*.js ../js/app.js
 
       - uses: peaceiris/actions-gh-pages@v3
