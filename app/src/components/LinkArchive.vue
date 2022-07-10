@@ -51,6 +51,10 @@ onBeforeMount(async () => {
   })
 })
 
+function getDomainForURL(urlString: string) : string {
+  return new URL(urlString).host
+}
+
 </script>
 
 <template>
@@ -69,11 +73,13 @@ onBeforeMount(async () => {
             .sort((a, b) => (b.posted.getTime() - a.posted.getTime()))"
           :key="link.url">
           <a :href="link.url" target="_blank">
-            {{ link.title }}
+            <span v-if="link.comment.length > 0" class="comment">
+              {{ link.comment }}
+            </span>
+            <aside>
+              {{ getDomainForURL(link.url) }}
+            </aside>
           </a>
-          <span v-if="link.comment.length > 0" class="comment">
-            {{ link.comment }}
-          </span>
         </li>
       </ul>
     </section>

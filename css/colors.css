@@ -43,6 +43,10 @@ div#circle::after {
   left: -800px;
 }
 
+img#logo {
+  padding-right: 3.0rem;
+}
+
 a {
   color: var(--pale-sky);
 }
@@ -73,21 +77,24 @@ header#hero h1 .special {
 
 /* Link blog */
 
-.link-blog a:visited {
-  color: var(--copper-red);
+.link-blog a {
+  text-decoration: none;
+  color: var(--black-pearl);
+}
+
+.link-blog a aside {
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .link-blog li:after {
   content: "";
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 2.0rem;
-  display: block;
-  margin: 0.75rem 0;
-}
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 
-.link-blog li:last-child:after {
-  border-bottom: 0;
+  width: 2.0rem;
+  margin: 0.75rem 0;
+
+  display: block;
 }
 
 /* Blog posts */
