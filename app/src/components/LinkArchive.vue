@@ -64,7 +64,10 @@ onBeforeMount(async () => {
         <h1>{{ day.date }}</h1>
       </header>
       <ul>
-        <li v-for="link in day.links" :key="link.url">
+        <li
+          v-for="link in day.links
+            .sort((a, b) => (b.posted.getTime() - a.posted.getTime()))"
+          :key="link.url">
           <a :href="link.url" target="_blank">
             {{ link.title }}
           </a>
