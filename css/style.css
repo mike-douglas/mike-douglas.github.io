@@ -134,7 +134,7 @@ header#hero img {
   padding: 0;
 }
 
-.link-blog span::before {
+.link-blog .comment::before {
   content: " \2014  ";
 }
 
