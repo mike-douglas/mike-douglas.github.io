@@ -65,10 +65,10 @@ onBeforeMount(async () => {
       </header>
       <ul>
         <li v-for="link in day.links" :key="link.url">
-          <a :href="link.url">
+          <a :href="link.url" target="_blank">
             {{ link.title }}
           </a>
-          <span>
+          <span v-if="link.comment.length > 0" class="comment">
             {{ link.comment }}
           </span>
         </li>
