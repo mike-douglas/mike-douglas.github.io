@@ -45,6 +45,16 @@ p, li, ol, blockquote {
   max-width: 60rem;
 }
 
+div#circle {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+  z-index: -1;
+}
+
 /* Heading, nav, footer for all pages */
 
 .page {
@@ -91,18 +101,6 @@ footer.page nav a {
   font-size: 2.0rem;
 }
 
-#content-page-circle-background {
-  position: absolute;
-  
-  top: -1400px;
-  left: -800px;
-
-  width: 1800px;
-  height: 1800px;
-
-  z-index: -1;
-}
-
 /* Hero page styles */
 
 header#hero h1 {
@@ -115,18 +113,6 @@ header#hero img {
   height: 175px;
 
   border-radius: 50%;
-}
-
-#home-circle-background {
-  position: absolute;
-  
-  top: -120px;
-  left: -800px;
-
-  width: 1800px;
-  height: 1800px;
-
-  z-index: -1;
 }
 
 /* Blog posts */
@@ -212,8 +198,8 @@ figure.wide {
   }
 
   header.page nav {
-    margin: 1.0rem;
-    column-gap: 2.0rem 1.0rem 1.0rem 0;
+    margin: 1.0rem 0 0 0;
+    column-gap: 2.0rem 0 0 0;
   }
 
   h1 {
