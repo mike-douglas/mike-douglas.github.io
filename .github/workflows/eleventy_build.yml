@@ -18,12 +18,6 @@ jobs:
         name: Setup Node
         with:
           node-version: '18.5'
-      
-      - name: Build site
-        run: |
-          npm install --include=dev
-          npx eleventy
-          cp CNAME _site/CNAME
 
       - name: Build apps
         run: |
@@ -32,6 +26,12 @@ jobs:
           npm run build
           mkdir -p ../js
           cp dist/assets/*.js ../js/app.js
+      
+      - name: Build site
+        run: |
+          npm install --include=dev
+          npx eleventy
+          cp CNAME _site/CNAME
 
       - uses: peaceiris/actions-gh-pages@v3
         name: Deploy
