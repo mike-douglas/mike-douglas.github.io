@@ -42,6 +42,7 @@ p, li, ol, blockquote {
 }
 
 .readable-width {
+  margin-top: 3.0rem;
   max-width: 60rem;
 }
 
@@ -113,6 +114,28 @@ header#hero img {
   height: 175px;
 
   border-radius: 50%;
+}
+
+/* Link blog */
+
+.link-blog {
+  font-size: 1.0rem;
+}
+
+.link-blog ul {
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.link-blog li {
+  margin: 0.25rem 0;
+  padding: 0;
+}
+
+.link-blog span::before {
+  content: " \2014  ";
 }
 
 /* Blog posts */
@@ -214,10 +237,6 @@ figure.wide {
     font-size: 1.1rem;
   }
 
-  #home-circle-background, #content-page-circle-background {
-    display: none;
-  }
-
   figure.wide {
     margin: 0;
   }
@@ -228,5 +247,9 @@ figure.wide {
 
   .gallery-row {
     display: block;
+  }
+
+  .link-blog ul {
+    columns: unset;
   }
 }
