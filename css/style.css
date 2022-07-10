@@ -116,18 +116,28 @@ header#hero img {
 
 .link-blog ul {
   list-style: none;
-  
-  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1.0rem 1.0rem;
+
+  margin: 1.0rem 0 0 0;
   padding: 0;
 }
 
 .link-blog li {
-  margin: 0.25rem 0;
+  margin: 0;
   padding: 0;
+
+  min-width: 40%;
+  max-width: 45%;
 }
 
-.link-blog .comment::before {
-  content: " \2014  ";
+.link-blog aside {
+  display: inline;
+  font-size: 0.9rem;
+  margin: 0 0 0 0.25rem;
 }
 
 /* Blog posts */
