@@ -74,7 +74,7 @@ header#hero h1 .special {
 /* Link blog */
 
 .link-blog a:visited {
-  color: var(--french-gray);
+  color: var(--copper-red);
 }
 
 .link-blog li:after {
