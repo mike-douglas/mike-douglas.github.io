@@ -134,10 +134,13 @@ header#hero img {
   max-width: 45%;
 }
 
+.link-blog .comment::after {
+  content: ' ';
+}
+
 .link-blog aside {
   display: inline;
   font-size: 0.9rem;
-  margin: 0 0 0 0.25rem;
 }
 
 /* Blog posts */
@@ -253,6 +256,11 @@ figure.wide {
   }
 
   .link-blog ul {
-    columns: unset;
+    display: block;
+  }
+
+  .link-blog li {
+    min-width: none;
+    max-width: none;
   }
 }
