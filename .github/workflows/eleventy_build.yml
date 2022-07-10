@@ -25,6 +25,13 @@ jobs:
           npx eleventy
           cp CNAME _site/CNAME
 
+      - name: Build apps
+        run: |
+          cd app
+          npm install
+          npm build
+          cp dist/assets/*.js ../js/app.js
+
       - uses: peaceiris/actions-gh-pages@v3
         name: Deploy
         with:

@@ -8,9 +8,10 @@ heroSpecial: Hi, I'm Mike.
 hero: I lead teams that build awesome things.
 ---
 
+<section class="readable-width">
 
-I'm an Engineering Manager in Providence, RI. I work at [Dropbox](https://dropbox.com).
+I'm an Engineering Manager in Providence, RI. I work at [Dropbox](https://dropbox.com). I like music 🎧 and I'm a plant person 🪴. I'm constantly trying to perfect my espresso technique ☕️ and I make a mean aviation cocktail 🍸. I like to tinker and build things in my spare time. You can find all of my projects on [GitHub](https://github.com/mike-douglas).
 
-I like music 🎧 and I'm a plant person 🪴. I'm constantly trying to perfect my espresso technique ☕️ and I make a mean aviation cocktail 🍸.
+This website is a place for me to post about my various projects, ocassional blog posts, and links that I find interesting.
 
-I like to tinker and build things in my spare time. You can find all of my projects on [GitHub](https://github.com/mike-douglas).
+</section>

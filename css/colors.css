@@ -71,6 +71,25 @@ header#hero h1 .special {
   color: var(--wintergreen-dream);
 }
 
+/* Link blog */
+
+.link-blog a:visited {
+  color: var(--french-gray);
+}
+
+.link-blog li:after {
+  content: "";
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 2.0rem;
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.link-blog li:last-child:after {
+  border-bottom: 0;
+}
+
 /* Blog posts */
 
 .meta {

@@ -28,5 +28,6 @@ coverage
 *.sw?
 
 docs/*
+js/
 _site
 node_modules
