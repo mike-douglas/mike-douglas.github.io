@@ -193,7 +193,7 @@ figure.wide {
   }
 
   img#logo {
-    margin: 1.0rem 8.0rem 1.0rem 1.0rem;
+    margin: 0 8.0rem 0 0;
   }
 
   header#hero h1 {
