@@ -13,7 +13,7 @@ type DailyArchive = {
   links: Link[]
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   limitDays: 7 
 })
   

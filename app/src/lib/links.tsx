@@ -10,8 +10,6 @@ type APIResult = {
 const url = 'https://qjtomllk33.execute-api.us-east-1.amazonaws.com/urls'
 
 const fetchLinks = async () : Promise<Link[]> => {
-  console.log(url)
-
   return (await fetch(url)).json()
     .then((result) : APIResult[] => result)
     .then((result) : Link[] => {
@@ -22,15 +20,6 @@ const fetchLinks = async () : Promise<Link[]> => {
         posted: new Date(value.posted)
       }))
     })
-
-  // const data = [
-  //   {
-  //     title: 'Some link',
-  //     url: 'https://google.com',
-  //     comment: 'Some comment',
-  //     posted: '2022-07-10T12:32:39.000Z'
-  //   } 
-  // ]
 }
 
 export default fetchLinks

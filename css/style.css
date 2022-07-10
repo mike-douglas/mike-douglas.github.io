@@ -89,17 +89,13 @@ img#logo {
 header.page nav {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 130%;
+  font-size: 2.0rem;
   column-gap: 3.0rem;
 }
 
 footer.page nav {
   gap: 1.0rem;
   margin-bottom: 1.0rem;
-}
-
-footer.page nav a {
-  font-size: 2.0rem;
 }
 
 /* Hero page styles */
@@ -117,10 +113,6 @@ header#hero img {
 }
 
 /* Link blog */
-
-.link-blog {
-  font-size: 1.0rem;
-}
 
 .link-blog ul {
   list-style: none;
@@ -222,7 +214,8 @@ figure.wide {
 
   header.page nav {
     margin: 1.0rem 0 0 0;
-    column-gap: 2.0rem 0 0 0;
+    column-gap: 1.0rem 0 0 0;
+    font-size: 1.75rem;
   }
 
   h1 {
