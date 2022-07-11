@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import type { Link } from "@/lib/Link"
-import fetchLinks from '@/lib/links'
+import { fetchLinksForDate } from '@/lib/links'
 import { onBeforeMount, reactive } from 'vue';
 
-type Props = {
-  limitDays?: number
-}
+const dates = Array.from({ length: 7 }, (_, n) => {
+  const dayN = new Date();
+  dayN.setDate(dayN.getDate() - n)
+
+  return dayN
+})
 
 type DailyArchive = {
   date: string,
@@ -13,42 +16,50 @@ type DailyArchive = {
   links: Link[]
 }
 
-withDefaults(defineProps<Props>(), {
-  limitDays: 7 
-})
-  
 type State = {
-  dailyArchive: DailyArchive[]
+  dailyArchive: DailyArchive[],
+  isLoading: boolean
 }
 
-const state : State = reactive({ dailyArchive: []})
+const state : State = reactive({
+  dailyArchive: [],
+  isLoading: true
+})
 
-onBeforeMount(async () => {
-  const map = new Map<string, Link[]>();
+onBeforeMount(() => {
+  dates.forEach(async (day) => {
+    const map = new Map<string, Link[]>();
 
-  (await fetchLinks()).forEach((item) => {
-    const key = item.posted.toLocaleDateString('en-us', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    (await fetchLinksForDate(day)).forEach((item) => {
+      const key = item.posted.toLocaleDateString('en-us', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })
+      const collection = map.get(key)
+
+      if (!collection) {
+        map.set(key, [item])
+      } else {
+        collection.push(item)
+      }
     })
-    const collection = map.get(key)
 
-    if (!collection) {
-      map.set(key, [item])
-    } else {
-      collection.push(item)
-    }
+    map.forEach((links, key) => {
+      state.dailyArchive.push({
+        date: key,
+        sortKey: new Date(links[0].posted.toDateString()),
+        links
+      })
+    })
+
+    window.setTimeout(() => {
+      state.isLoading = false
+    }, 250)
+
   })
 
-  map.forEach((links, key) => {
-    state.dailyArchive.push({
-      date: key,
-      sortKey: new Date(links[0].posted.toDateString()),
-      links
-    })
-  })
 })
 
 function getDomainForURL(urlString: string) : string {
@@ -60,8 +71,7 @@ function getDomainForURL(urlString: string) : string {
 <template>
   <article
     v-for="day in state.dailyArchive
-      .sort((a, b) => (a.sortKey > b.sortKey ? -1 : 1))
-      .slice(0, limitDays)"
+      .sort((a, b) => (a.sortKey > b.sortKey ? -1 : 1))"
     :key="day.date">
     <section>
       <header>
@@ -70,7 +80,7 @@ function getDomainForURL(urlString: string) : string {
       <ul>
         <li
           v-for="link in day.links
-            .sort((a, b) => (b.posted.getTime() - a.posted.getTime()))"
+            .sort((a, b) => (a.posted.getTime() - b.posted.getTime()))"
           :key="link.url">
           <a :href="link.url" target="_blank">
             <span v-if="link.comment.length > 0" class="comment">
