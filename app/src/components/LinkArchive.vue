@@ -77,7 +77,7 @@ function getDomainForURL(urlString: string) : string {
               {{ link.comment }}
             </span>
             <aside>
-              {{ getDomainForURL(link.url) }}
+              {{ getDomainForURL(link.url).replace(/^www\./, '') }}
             </aside>
           </a>
         </li>
