@@ -35,7 +35,8 @@ onBeforeMount(() => {
         weekday: 'long',
         year: 'numeric',
         month: 'long',
-        day: 'numeric'
+        day: 'numeric',
+        timeZone: 'UTC'
       })
       const collection = map.get(key)
 
@@ -49,7 +50,7 @@ onBeforeMount(() => {
     map.forEach((links, key) => {
       state.dailyArchive.push({
         date: key,
-        sortKey: new Date(links[0].posted.toDateString()),
+        sortKey: links[0].posted,
         links
       })
     })
@@ -71,7 +72,7 @@ function getDomainForURL(urlString: string) : string {
 <template>
   <article
     v-for="day in state.dailyArchive
-      .sort((a, b) => (a.sortKey > b.sortKey ? -1 : 1))"
+      .sort((a, b) => (b.sortKey.getTime() - a.sortKey.getTime()))"
     :key="day.date">
     <section>
       <header>
