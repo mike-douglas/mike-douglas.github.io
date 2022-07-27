@@ -26,6 +26,8 @@ body {
 div#circle {
   width: 100vw;
   height: 1500px;
+
+  animation: wobble 8s alternate infinite;
 }
 
 div#circle::after {
@@ -41,6 +43,22 @@ div#circle::after {
 
   top: -300px;
   left: -800px;
+}
+
+@keyframes wobble {
+  0% {
+    transform: scaleX(1.0);
+  }
+  25% {
+    transform: scaleX(1.02);
+  }
+  75% {
+    transform: scaleY(1.02);
+  }
+  100% {
+    transform: scaleX(1.0);
+    transform: scaleY(1.0);
+  }
 }
 
 img#logo {
