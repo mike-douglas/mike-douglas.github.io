@@ -51,8 +51,8 @@ div#fig {
 
   position: absolute;
 
-  top: 100px;
-  left: -350px;
+  top: -50px;
+  left: -450px;
   width: 800px;
   height: 800px;
 }
@@ -137,9 +137,9 @@ article h1 {
   color: var(--english-violet);
 }
 
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 1112px) {
   div#fig {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -147,6 +147,7 @@ article h1 {
   div#circle {
     width: 100%;
     height: 250px;
+    animation: none;
   }
 
   div#circle::after {
@@ -158,8 +159,7 @@ article h1 {
   }
 
   div#fig {
-    display: block;
-    top: -175px;
+    top: -275px;
     left: -500px;
   }
 }
