@@ -53,6 +53,10 @@ div#circle {
   left: 0;
 
   overflow: hidden;
+  z-index: -2;
+}
+
+div#fig {
   z-index: -1;
 }
 
@@ -100,8 +104,12 @@ footer.page nav {
 
 /* Hero page styles */
 
+header#hero {
+  margin: 100px 0 0 0;
+}
+
 header#hero h1 {
-  margin: 1.5rem 0 0 0;
+  margin: 0 0 0 0;
   font-size: 5.0rem;
 }
 
