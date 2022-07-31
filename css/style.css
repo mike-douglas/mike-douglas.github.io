@@ -70,6 +70,7 @@ div#fig {
 header.page {
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 footer.page {
@@ -104,12 +105,8 @@ footer.page nav {
 
 /* Hero page styles */
 
-header#hero {
-  margin: 100px 0 0 0;
-}
-
 header#hero h1 {
-  margin: 0 0 0 0;
+  margin: 0;
   font-size: 5.0rem;
 }
 
@@ -231,6 +228,7 @@ figure.wide {
 @media only screen and (max-width : 480px) {
   header.page {
     display: block;
+    margin-bottom: auto;
   }
 
   header.page nav {
