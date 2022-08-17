@@ -7,7 +7,7 @@ type APIResult = {
   posted: string
 }
 
-const url = 'https://qjtomllk33.execute-api.us-east-1.amazonaws.com/urls'
+const url = 'https://iigligf41c.execute-api.us-east-1.amazonaws.com/urls'
 
 const fetchLinks = async () : Promise<Link[]> => {
   return (await fetch(url)).json()
