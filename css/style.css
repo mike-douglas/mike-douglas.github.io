@@ -56,10 +56,6 @@ div#circle {
   z-index: -2;
 }
 
-div#fig {
-  z-index: -1;
-}
-
 /* Heading, nav, footer for all pages */
 
 .page {

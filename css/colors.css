@@ -45,18 +45,6 @@ div#circle::after {
   left: -800px;
 }
 
-div#fig {
-  background: url('/images/fig.png') top left no-repeat;
-  background-size: 792px 612px;
-
-  position: absolute;
-
-  top: -50px;
-  left: -450px;
-  width: 800px;
-  height: 800px;
-}
-
 @keyframes wobble {
   0% {
     transform: scaleX(1.0);
@@ -138,9 +126,6 @@ article h1 {
 }
 
 @media only screen and (max-width : 1112px) {
-  div#fig {
-    /* display: none; */
-  }
 }
 
 @media only screen and (max-width : 480px) {
@@ -156,10 +141,5 @@ article h1 {
     
     top: -600px;
     left: -250px;
-  }
-
-  div#fig {
-    top: -275px;
-    left: -500px;
   }
 }
