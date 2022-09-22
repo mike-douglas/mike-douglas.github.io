@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans&family=Oswald:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Open+Sans&display=swap');
 
 body {
   margin: 0;
   padding: 0;
 
-  font-size: 115%;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  font-family: 'Barlow', 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-
-  font-family: 'Merriweather', serif;
+  font-weight: 500;
 }
 
 h1 {
-  font-size: 2.7rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -34,26 +32,16 @@ article {
 }
 
 section {
-  margin-bottom: 1.0rem;
+  margin-bottom: 0.50rem;
 }
 
 p, li, ol, blockquote {
-  line-height: 2.0rem;
+  line-height: 1.5rem;
 }
 
 .readable-width {
   margin-top: 3.0rem;
-  max-width: 60rem;
-}
-
-div#circle {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  overflow: hidden;
-  z-index: -2;
+  max-width: 40rem;
 }
 
 /* Heading, nav, footer for all pages */
@@ -66,12 +54,15 @@ div#circle {
 header.page {
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
 }
 
 footer.page {
   margin-top: 4.0rem;
   margin-bottom: 1.0rem;
+}
+
+footer.page nav a {
+  font-size: 160%;
 }
 
 img#logo {
@@ -90,7 +81,7 @@ img#logo {
 header.page nav {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  font-size: 2.0rem;
+  font-size: 1.2rem;
   column-gap: 3.0rem;
 }
 
@@ -103,17 +94,29 @@ footer.page nav {
 
 header#hero h1 {
   margin: 0;
-  font-size: 5.0rem;
+  font-size: 2.0rem;
 }
 
 header#hero img {
-  width: 175px;
-  height: 175px;
+  width: 100px;
+  height: 100px;
 
   border-radius: 50%;
+  margin-bottom: 1.5rem;
 }
 
 /* Link blog */
+
+img#icon-coffee-sidebar {
+  width: 50px;
+  height: 50px;
+}
+
+img#icon-tree-sidebar {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.0rem;
+}
 
 .link-blog ul {
   list-style: none;
@@ -211,10 +214,6 @@ figure.wide {
     margin: 0 8.0rem 0 0;
   }
 
-  header#hero h1 {
-    font-size: 3.0rem;
-  }
-
   header#hero img {
     width: 100px;
     height: 100px;
@@ -230,19 +229,19 @@ figure.wide {
   header.page nav {
     margin: 1.0rem 0 0 0;
     column-gap: 1.0rem 0 0 0;
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
   }
 
   h1 {
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
   }
   
   h2 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
   
   h3 {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
   }
 
   figure.wide {
