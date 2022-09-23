@@ -23,10 +23,6 @@ body {
   color: var(--black-pearl);
 }
 
-img#logo {
-  padding-right: 3.0rem;
-}
-
 a {
   color: var(--copper-red);
 }
