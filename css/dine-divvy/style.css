@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #f6f6f6;
+  color: #2f2f2f;
+
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 115%;
+
+  background: url('/images/dine-divvy/screenshots.png') top right no-repeat;
+  background-size: 792px 1042px;
+}
+
+/* Header */
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 4.0rem 4.0rem 0 4.0rem;
+}
+
+header>* {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #2f2f2f;
+}
+
+nav ul {
+  display: table-row;
+
+  text-indent: 0;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: table-cell;
+
+  margin: 0;
+  padding: 0 2.0rem 0 2.0rem;
+}
+
+#app-store-link {
+  text-indent: -200rem;
+  display: inline-block;
+
+  background: url('/images/dine-divvy/app-store.png') top left no-repeat;
+  background-size: 165px 55px;
+
+  width: 165px;
+  height: 55px;
+}
+
+#download-app {
+  text-align: right;
+  color: #fff;
+}
+
+#logo {
+  text-indent: -200rem;
+  background: url('/images/dine-divvy/logo.png') top left no-repeat;
+  background-size: 12.375rem 2.9375rem;
+  display: inline-block;
+
+  width: 12.375rem;
+  height: 2.9375rem;
+
+  margin: 0 4.0rem 0 0;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15.88rem 0 0 11.94rem;
+  min-height: 700px;
+}
+
+#hero-image {
+  text-indent: -200rem;
+
+  display: inline-block;
+
+  background: url('/images/dine-divvy/hero.png') top left no-repeat;
+  background-size: 466px 290px;
+
+  width: 466px;
+  height: 290px;
+
+  margin: 0 0 3.0rem;
+}
+
+/* Features */
+.about {
+  padding: 2.0rem;
+}
+
+.features { 
+  background-color: #7943E4;
+  border-radius: 2.0rem;
+  padding: 2.0rem;
+
+  color: #f6f6f6;
+}
+
+.features h1 {
+  text-indent: -200rem;
+}
+
+.features p {
+  color: #D9D4E3;
+  font-size: 1.8rem;
+  max-width: 40rem;
+}
+
+.features .import, .features .add-friends, .features .share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 4.0rem 0;
+}
+
+.features .screenshot {
+  width: 543px;
+  height: 471px;
+}
+
+/* Features: Import */
+.import h1 {
+  background: url('/images/dine-divvy/import-title.png') top left no-repeat;
+  background-size: 527px 62px;
+
+  width: 527px;
+  height: 62px;
+}
+
+.import .feature-image {
+  background: url('/images/dine-divvy/import.png') top left no-repeat;
+  background-size: 161px 109px;
+
+  width: 161px;
+  height: 109px;
+}
+
+.import .screenshot {
+  background: url('/images/dine-divvy/import-screenshot.png') top left no-repeat;
+  background-size: 543px 471px;
+}
+
+/* Features: Add Friends */
+.add-friends h1 {
+  background: url('/images/dine-divvy/add-friends-title.png') top left no-repeat;
+  background-size: 586px 62px;
+
+  width: 586px;
+  height: 62px;
+}
+
+.add-friends .feature-image {
+  background: url('/images/dine-divvy/add-friends.png') top left no-repeat;
+  background-size: 307px 108px;
+
+  width: 307px;
+  height: 108px;
+}
+
+.add-friends .screenshot {
+  background: url('/images/dine-divvy/add-friends-screenshot.png') top left no-repeat;
+  background-size: 543px 471px;
+}
+
+/* Features: Share */
+.share h1 {
+  background: url('/images/dine-divvy/share-title.png') top left no-repeat;
+  background-size: 457px 151px;
+
+  width: 457px;
+  height: 151px;
+}
+
+.share .feature-image {
+  background: url('/images/dine-divvy/share.png') top left no-repeat;
+  background-size: 236px 126px;
+
+  width: 236px;
+  height: 126px;
+}
+
+.share .screenshot {
+  background: url('/images/dine-divvy/share-screenshot.png') top left no-repeat;
+  background-size: 543px 471px;
+}
+
+/* Support */
+.support {
+  padding: 2.0rem;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact {
+  background-color: #1C1C1C;
+  border-radius: 2.0rem;
+  padding: 2.0rem;
+
+  font-size: 1.8rem;
+  color: #f6f6f6;
+}
