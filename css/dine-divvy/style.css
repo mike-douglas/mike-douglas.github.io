@@ -98,10 +98,13 @@ nav a {
   margin: 0 0 0.50rem 0;
 }
 
-.about .screenshot {
-  border-radius: 1.25rem;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.10);
+/* .about .screenshot {
+  width: 543px;
+  height: 471px;
+} */
+
+.screenshot img {
+  width: 100%;
 }
 
 .features {
@@ -124,7 +127,7 @@ nav a {
 @media screen and (min-width: 780px) {
   body {
     background: url('/images/dine-divvy/screenshots.png') top right no-repeat;
-    background-size: 792px 970px;
+    background-size: 779px 909px;
   }
 
   p {
