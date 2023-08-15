@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 1.0rem;
 
   background: #f6f6f6;
   color: #2f2f2f;
@@ -8,220 +10,195 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 115%;
 
-  background: url('/images/dine-divvy/screenshots.png') top right no-repeat;
-  background-size: 792px 1042px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
 }
 
-/* Header */
+h1 {
+  font-family: 'Francois One', sans-serif;
+  font-weight: 400;
+}
 
-a {
-  text-decoration: none;
+h2 {
+  font-weight: 400;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  margin: 4.0rem 4.0rem 0 4.0rem;
+  position: relative;
 }
 
-header>* {
-  flex: 1;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav a {
-  color: #2f2f2f;
-}
-
-nav ul {
-  display: table-row;
-
-  text-indent: 0;
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: table-cell;
-
-  margin: 0;
-  padding: 0 2.0rem 0 2.0rem;
-}
-
-#app-store-link {
-  text-indent: -200rem;
-  display: inline-block;
-
-  background: url('/images/dine-divvy/app-store.png') top left no-repeat;
-  background-size: 165px 55px;
-
-  width: 165px;
-  height: 55px;
-}
-
-#download-app {
-  text-align: right;
-  color: #fff;
+#shape {
+  position: absolute;
+  top: -150px;
+  left: -20px;
+  width: 300px;
+  height: 300px;
+  background: #4A86F8;
+  display: block;
+  border-radius: 3.0rem;
+  transform: rotate(15deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 #logo {
   text-indent: -200rem;
+  display: inline-block;
   background: url('/images/dine-divvy/logo.png') top left no-repeat;
-  background-size: 12.375rem 2.9375rem;
-  display: inline-block;
+  background-size: 198px 47px;
 
-  width: 12.375rem;
-  height: 2.9375rem;
-
-  margin: 0 4.0rem 0 0;
+  width: 198px;
+  height: 47px;
 }
 
-/* Hero */
-
-.hero {
-  display: flex;
-  flex-direction: column;
-
-  padding: 15.88rem 0 0 11.94rem;
-  min-height: 700px;
-}
-
-#hero-image {
-  text-indent: -200rem;
-
-  display: inline-block;
-
-  background: url('/images/dine-divvy/hero.png') top left no-repeat;
-  background-size: 466px 290px;
-
-  width: 466px;
-  height: 290px;
-
-  margin: 0 0 3.0rem;
-}
-
-/* Features */
-.about {
-  padding: 2.0rem;
-}
-
-.features { 
-  background-color: #7943E4;
-  border-radius: 2.0rem;
-  padding: 2.0rem;
-
-  color: #f6f6f6;
-}
-
-.features h1 {
-  text-indent: -200rem;
-}
-
-.features p {
-  color: #D9D4E3;
-  font-size: 1.8rem;
-  max-width: 40rem;
-}
-
-.features .import, .features .add-friends, .features .share {
+nav ul {
+  list-style: none;
+  margin: 0 0 0 4.0rem;
+  padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 0 4.0rem 0;
+  gap: 1.0rem;
 }
 
-.features .screenshot {
-  width: 543px;
-  height: 471px;
-}
-
-/* Features: Import */
-.import h1 {
-  background: url('/images/dine-divvy/import-title.png') top left no-repeat;
-  background-size: 527px 62px;
-
-  width: 527px;
-  height: 62px;
-}
-
-.import .feature-image {
-  background: url('/images/dine-divvy/import.png') top left no-repeat;
-  background-size: 161px 109px;
-
-  width: 161px;
-  height: 109px;
-}
-
-.import .screenshot {
-  background: url('/images/dine-divvy/import-screenshot.png') top left no-repeat;
-  background-size: 543px 471px;
-}
-
-/* Features: Add Friends */
-.add-friends h1 {
-  background: url('/images/dine-divvy/add-friends-title.png') top left no-repeat;
-  background-size: 586px 62px;
-
-  width: 586px;
-  height: 62px;
-}
-
-.add-friends .feature-image {
-  background: url('/images/dine-divvy/add-friends.png') top left no-repeat;
-  background-size: 307px 108px;
-
-  width: 307px;
-  height: 108px;
-}
-
-.add-friends .screenshot {
-  background: url('/images/dine-divvy/add-friends-screenshot.png') top left no-repeat;
-  background-size: 543px 471px;
-}
-
-/* Features: Share */
-.share h1 {
-  background: url('/images/dine-divvy/share-title.png') top left no-repeat;
-  background-size: 457px 151px;
-
-  width: 457px;
-  height: 151px;
-}
-
-.share .feature-image {
-  background: url('/images/dine-divvy/share.png') top left no-repeat;
-  background-size: 236px 126px;
-
-  width: 236px;
-  height: 126px;
-}
-
-.share .screenshot {
-  background: url('/images/dine-divvy/share-screenshot.png') top left no-repeat;
-  background-size: 543px 471px;
-}
-
-/* Support */
-.support {
-  padding: 2.0rem;
-}
-
-.contact a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.contact {
-  background-color: #1C1C1C;
-  border-radius: 2.0rem;
-  padding: 2.0rem;
-
-  font-size: 1.8rem;
+nav a {
   color: #f6f6f6;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 101.3%; /* 4.052rem */
+  letter-spacing: -0.14rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #C2C2C2;
+}
+
+.about {
+  background-color: #7943E4;
+  border-radius: 1.25rem;
+  padding: 1.25rem 0.625rem;
+  color: #D9D4E3;
+}
+
+.about h1 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 0.50rem 0;
+}
+
+.about .screenshot {
+  border-radius: 1.25rem;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0rem;
+}
+
+.support {
+  background-color: #2f2f2f;
+  border-radius: 1.25rem;
+  padding: 1.25rem 0.625rem;
+  color: #f6f6f6;
+}
+
+.support a {
+  color: #fff;
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    background: url('/images/dine-divvy/screenshots.png') top right no-repeat;
+    background-size: 792px 970px;
+  }
+
+  p {
+    line-height: 1.9rem;
+  }
+
+  #shape {
+    top: -150px;
+    left: -20px;
+    width: 300px;
+    height: 300px;
+    /* transform: none; */
+  }
+
+  .hero {
+    display: inline-block;
+    margin: 0 0 4.0rem 4.0rem;
+  }
+
+  .hero h1 {
+    font-size: 6.0rem;
+    max-width: 40rem;
+  }
+
+  .hero h2 {
+    max-width: 30rem;
+  }
+
+  section.about, section.support {
+    max-width: 70rem;
+    border-radius: 3.0rem;
+  }
+
+  .features, .support {
+    padding: 2.0rem;
+  }
+
+  .import, .add-friends, .share {
+    display: grid;
+
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: auto 1fr;
+  }
+
+  .features header {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .features h1 {
+    font-size: 3.0rem;
+  }
+
+  .features .content p {
+    font-size: 1.5rem;
+    max-width: 40rem;
+  }
+
+  .features .screenshot {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    height: 400px;
+  }
+
+  .features .content {
+    justify-self: start;
+    align-self: start;
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+  }
 }
