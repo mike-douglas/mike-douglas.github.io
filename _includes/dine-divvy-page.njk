@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>directive.io - {{ title }}</title>
+
+    <link rel="stylesheet" href="/css/dine-divvy/style.css">
+  </head>
+  <body class="page">
+    <header class="main">
+      <div id="shape"></div>
+      <nav>
+        <a href="/apps/dine-divvy" id="logo">
+          Dine Divvy
+        </a>
+        <ul>
+          <li><a href="#about">Features</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <article>
+        {{ content | safe }}
+      </article
+    </section>
+  </body>
+</html>
