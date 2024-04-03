@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>directive.io - {{ title }}</title>
+    <title>{{ title }}</title>
 
-    <link rel="stylesheet" href="/css/colors.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <meta http-equiv="refresh" content="2; URL=https://miked.codes" />
   </head>
   <body>
-    <header class="page">
-      <img id="logo" src="/images/logo.svg" alt="directive.io">
-    </header>
-    <section class="page">
-      {% if hero %}
-      <header id="hero">
-        {% if heroImage %}<img src="{{ heroImage }}">{% endif %}
-        <h1><span class="special">{{ heroSpecial }}</span> {{ hero }}</h1>
-      </header>
-      {% endif %}
-
+    <section>
       {{ content | safe }}
     </section>
   </body>
